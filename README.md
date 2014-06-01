@@ -20,6 +20,6 @@
 3. Symlink the CASTLE contents to your home directory
 ```homesick symlink dotfiles```
 
-### Thanks / Resources
-@technicalpickles for the homesick gem and introductory [blog post](http://technicalpickles.com/posts/never-leave-your-dotfiles-behind-again-with-homesick/)
-@wireframe for the [blog post](http://codecrate.com/2013/08/homesick-dotfile-managment.html) and example
+#### Resources
+* introductory [blog post](http://technicalpickles.com/posts/never-leave-your-dotfiles-behind-again-with-homesick/) by [@technicalpickles](https://github.com/technicalpickles)
+* example [blog post](http://codecrate.com/2013/08/homesick-dotfile-managment.html) by [@wireframe](https://github.com/wireframe)
