@@ -1,0 +1,2 @@
+-T # skips making the test unit folders (I use rspec)
+-d postgresql # defaults my development database to PostgreSQL instead of SQLite3
