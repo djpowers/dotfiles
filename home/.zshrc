@@ -50,7 +50,7 @@ source $ZSH/oh-my-zsh.sh
 export PATH=/usr/local/bin:$PATH:/Users/Dave/.rvm/gems/ruby-2.0.0-p247/bin:/Users/Dave/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/Dave/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/Dave/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 
 # migrate, rollback, migrate, prepare tests
-alias mrmt="rake db:migrate && rake db:rollback && rake db:migrate && rake db:test:prepare"
+alias mrm="rake db:migrate && rake db:rollback && rake db:migrate"
 
 # create new directory and cd into it
 function mcd() {
