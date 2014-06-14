@@ -49,7 +49,7 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 export PATH=/usr/local/bin:$PATH:/Users/Dave/.rvm/gems/ruby-2.0.0-p247/bin:/Users/Dave/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/Dave/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/Dave/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 
-# migrate, rollback, migrate, prepare tests
+# migrate, rollback, migrate
 alias mrm="rake db:migrate && rake db:rollback && rake db:migrate"
 
 # create new directory and cd into it
