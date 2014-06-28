@@ -47,7 +47,7 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=$PATH:/.rvm/bin/Users:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
+export PATH=$PATH:/.rvm/bin/Users:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 
 # migrate, rollback, migrate
 alias mrm="rake db:migrate && rake db:rollback && rake db:migrate"
