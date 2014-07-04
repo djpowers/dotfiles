@@ -47,7 +47,8 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=$PATH:/.rvm/bin/Users:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+export PATH=$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+export PATH=/usr/local/bin:$PATH
 
 # migrate, rollback, migrate
 alias mrm="rake db:migrate && rake db:rollback && rake db:migrate"
@@ -65,3 +66,5 @@ eval "$(hub alias -s)"
 
 # added by travis gem
 [ -f /Users/Dave/.travis/travis.sh ] && source /Users/Dave/.travis/travis.sh
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting

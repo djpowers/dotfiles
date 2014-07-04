@@ -6,4 +6,4 @@ export PATH="/usr/local/heroku/bin:$PATH"
 # added by travis gem
 [ -f /Users/Dave/.travis/travis.sh ] && source /Users/Dave/.travis/travis.sh
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
