@@ -14,3 +14,6 @@ if type -t __git_ps1 | grep -q '^function$' 2>/dev/null; then
     PS1=$PS1'$(__git_ps1)'
 fi
 export PS1=$PS1'\n[\[\e[36m\]\D{%Y-%m-%d %T}\[\e[0m\]]\$ '
+
+export NVM_DIR="$HOME/.nvm"
+. "/usr/local/opt/nvm/nvm.sh"
