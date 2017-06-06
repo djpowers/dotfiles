@@ -4,6 +4,7 @@
 [core]
 	autocrlf = false
 	safecrlf = true
+	editor = /usr/bin/vim
 [alias]
   co = checkout
   ci = commit
