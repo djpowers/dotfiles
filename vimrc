@@ -1,4 +1,16 @@
-filetype plugin indent on
+" Automatic vim-plug installation
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
+" Specify a directory for plugins
+call plug#begin('~/.vim/plugged')
+" Make sure you use single quotes
+Plug 'ctrlpvim/ctrlp.vim'
+" Initialize plugin system
+call plug#end()
 
 syntax enable                 " Use syntax highlighting
 set nu                        " Display line numbers beside buffer
