@@ -23,6 +23,7 @@ set expandtab                 " Tab key (in insert mode) inserts spaces instead 
 set ruler                     " Show line number, column number, and virtual column number on right side of status bar
 set backspace=2               " More powerful backspacing
 
+set visualbell                " Use visual flash instead of beep on error
 set noswapfile                " http://robots.thoughtbot.com/post/18739402579/global-gitignore#comment-458413287
 
 autocmd BufNewFile,BufRead *.json,.jshintrc,*.jsd set ft=javascript
