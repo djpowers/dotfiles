@@ -10,6 +10,7 @@ call plug#begin('~/.vim/plugged')
 " Make sure you use single quotes
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'airblade/vim-gitgutter'
+Plug 'editorconfig/editorconfig-vim'
 " Initialize plugin system
 call plug#end()
 
