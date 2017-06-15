@@ -23,7 +23,8 @@ set tabstop=2                 " Width of hard tabstop measured in 'spaces' (maxi
 set shiftwidth=2              " Size of an 'indent' measured in spaces
 set expandtab                 " Tab key (in insert mode) inserts spaces instead of tab characters
 set ruler                     " Show line number, column number, and virtual column number on right side of status bar
-set backspace=2               " More powerful backspacing
+set laststatus=2              " Always display the status line
+set backspace=2               " Backspace deletes like most programs in insert mode
 
 set visualbell                " Use visual flash instead of beep on error
 set noswapfile                " http://robots.thoughtbot.com/post/18739402579/global-gitignore#comment-458413287
