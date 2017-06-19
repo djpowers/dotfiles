@@ -15,6 +15,8 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rhubarb'
 " Initialize plugin system
 call plug#end()
 
@@ -34,4 +36,5 @@ set visualbell                " Use visual flash instead of beep on error
 set noswapfile                " http://robots.thoughtbot.com/post/18739402579/global-gitignore#comment-458413287
 set updatetime=250            " Set faster update time (for vim-gitgutter)
 
+let g:EditorConfig_exclude_patterns = ['fugitive://.*']
 autocmd BufNewFile,BufRead *.json,.jshintrc,*.jsd set ft=javascript
