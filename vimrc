@@ -37,5 +37,9 @@ set visualbell                " Use visual flash instead of beep on error
 set noswapfile                " http://robots.thoughtbot.com/post/18739402579/global-gitignore#comment-458413287
 set updatetime=250            " Set faster update time (for vim-gitgutter)
 
+" Move up and down by visible lines if current line is wrapped
+nmap j gj
+nmap k gk
+
 let g:EditorConfig_exclude_patterns = ['fugitive://.*']
 autocmd BufNewFile,BufRead *.json,.jshintrc,*.jsd set ft=javascript
