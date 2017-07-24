@@ -17,7 +17,7 @@ Plug 'tpope/vim-rails'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
-Plug 'joukevandermaas/vim-ember-hbs'
+Plug 'sheerun/vim-polyglot'
 " Initialize plugin system
 call plug#end()
 
