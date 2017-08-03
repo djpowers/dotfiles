@@ -18,8 +18,11 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
 Plug 'sheerun/vim-polyglot'
+Plug 'flazz/vim-colorschemes'
 " Initialize plugin system
 call plug#end()
+
+colorscheme cobalt2
 
 syntax enable                 " Use syntax highlighting
 set nu                        " Display line numbers beside buffer
