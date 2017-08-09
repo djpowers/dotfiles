@@ -19,6 +19,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
 Plug 'sheerun/vim-polyglot'
 Plug 'flazz/vim-colorschemes'
+Plug 'craigemery/vim-autotag'
 " Initialize plugin system
 call plug#end()
 
