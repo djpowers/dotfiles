@@ -5,6 +5,7 @@
 	autocrlf = false
 	safecrlf = true
 	editor = /usr/bin/vim
+	excludesfile = ~/.gitignore_global
 [alias]
   co = checkout
   ci = commit
