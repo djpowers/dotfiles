@@ -20,6 +20,7 @@ Plug 'tpope/vim-rhubarb'
 Plug 'sheerun/vim-polyglot'
 Plug 'flazz/vim-colorschemes'
 Plug 'craigemery/vim-autotag'
+Plug 'mattn/emmet-vim'
 " Initialize plugin system
 call plug#end()
 
