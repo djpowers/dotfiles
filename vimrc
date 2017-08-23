@@ -52,3 +52,10 @@ autocmd BufNewFile,BufRead *.json,.jshintrc,*.jsd set ft=javascript
 " Make CtrlP use ag for listing the files. Way faster and no useless files.
 let g:ctrlp_user_command = 'ag %s -l --hidden --nocolor -g ""'
 let g:ctrlp_use_caching = 0
+
+" Set Emmet to apply jsx settings to javascript.jsx filetype
+let g:user_emmet_settings = {
+\  'javascript.jsx' : {
+\      'extends' : 'jsx',
+\  },
+\}
