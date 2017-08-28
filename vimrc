@@ -50,8 +50,11 @@ nmap k gk
 set splitbelow
 set splitright
 
-let g:EditorConfig_exclude_patterns = ['fugitive://.*']
+" Set JavaScript as filetype for additional extensions
 autocmd BufNewFile,BufRead *.json,.jshintrc,*.jsd set ft=javascript
+
+" Ensure that EditorConfig works well with fugitive
+let g:EditorConfig_exclude_patterns = ['fugitive://.*']
 
 " Make CtrlP use ag for listing the files. Way faster and no useless files.
 let g:ctrlp_user_command = 'ag %s -l --hidden --nocolor -g ""'
