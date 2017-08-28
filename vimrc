@@ -46,6 +46,10 @@ set updatetime=250            " Set faster update time (for vim-gitgutter)
 nmap j gj
 nmap k gk
 
+" Open new split panes to right and bottom, which feels more natural
+set splitbelow
+set splitright
+
 let g:EditorConfig_exclude_patterns = ['fugitive://.*']
 autocmd BufNewFile,BufRead *.json,.jshintrc,*.jsd set ft=javascript
 
