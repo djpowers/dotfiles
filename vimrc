@@ -66,3 +66,6 @@ let g:user_emmet_settings = {
 \      'extends' : 'jsx',
 \  },
 \}
+
+" Disable automatic comment insertion
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
