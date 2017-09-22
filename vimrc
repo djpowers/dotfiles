@@ -39,6 +39,9 @@ set ruler                     " Show line number, column number, and virtual col
 set laststatus=2              " Always display the status line
 set backspace=2               " Backspace deletes like most programs in insert mode
 
+set incsearch                 " Start searching before pressing enter
+set hlsearch                  " Highlight all search pattern matches
+
 set visualbell                " Use visual flash instead of beep on error
 set noswapfile                " http://robots.thoughtbot.com/post/18739402579/global-gitignore#comment-458413287
 set updatetime=250            " Set faster update time (for vim-gitgutter)
