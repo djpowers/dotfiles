@@ -70,3 +70,6 @@ let g:user_emmet_settings = {
 
 " Disable automatic comment insertion
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+
+" Open quickfix window after any grep invocation
+autocmd QuickFixCmdPost *grep* cwindow
