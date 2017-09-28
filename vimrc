@@ -77,6 +77,11 @@ let g:user_emmet_settings = {
 \  },
 \}
 
+" Set ALE fixers
+let g:ale_fixers = {
+\   'ruby': ['rubocop'],
+\}
+
 " Disable automatic comment insertion
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
