@@ -24,7 +24,7 @@ Plug 'craigemery/vim-autotag'
 Plug 'mattn/emmet-vim'
 Plug 'w0rp/ale'
 Plug 'takac/vim-hardtime'
-" Plug 'jeffkreeftmeijer/vim-numbertoggle'
+Plug 'jeffkreeftmeijer/vim-numbertoggle'
 " Initialize plugin system
 call plug#end()
 
