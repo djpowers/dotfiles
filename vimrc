@@ -24,13 +24,15 @@ Plug 'craigemery/vim-autotag'
 Plug 'mattn/emmet-vim'
 Plug 'w0rp/ale'
 Plug 'takac/vim-hardtime'
+" Plug 'jeffkreeftmeijer/vim-numbertoggle'
 " Initialize plugin system
 call plug#end()
 
 colorscheme cobalt2
 
 syntax enable                 " Use syntax highlighting
-set nu                        " Display line numbers beside buffer
+set number                    " Show current line number
+set relativenumber            " Show relative line numbers
 set listchars=tab:>-,trail:-  " Set character used to indicate unwanted spaces
 set list                      " Enable displaying unwanted spaces
 set smartindent               " Automatically inserts one extra level of indentation in some cases
