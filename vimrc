@@ -66,6 +66,9 @@ endif
 " Set JavaScript as filetype for additional extensions
 autocmd BufNewFile,BufRead *.json,.jshintrc,*.jsd set ft=javascript
 
+" Run hardline in every buffer
+let g:hardtime_default_on = 1
+
 " Ensure that EditorConfig works well with fugitive
 let g:EditorConfig_exclude_patterns = ['fugitive://.*']
 
