@@ -50,9 +50,9 @@ set visualbell                " Use visual flash instead of beep on error
 set noswapfile                " http://robots.thoughtbot.com/post/18739402579/global-gitignore#comment-458413287
 set updatetime=250            " Set faster update time (for vim-gitgutter)
 
-" Move up and down by visible lines if current line is wrapped
-nmap j gj
-nmap k gk
+" Move up and down by physical lines if using a count, otherwise by visible lines
+nnoremap <expr> j v:count ? 'j' : 'gj'
+nnoremap <expr> k v:count ? 'k' : 'gk'
 
 " Open new split panes to right and bottom, which feels more natural
 set splitbelow
