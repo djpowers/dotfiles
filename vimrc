@@ -23,7 +23,6 @@ Plug 'flazz/vim-colorschemes'
 Plug 'craigemery/vim-autotag'
 Plug 'mattn/emmet-vim'
 Plug 'w0rp/ale'
-Plug 'takac/vim-hardtime'
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
 " Initialize plugin system
 call plug#end()
@@ -65,9 +64,6 @@ endif
 
 " Set JavaScript as filetype for additional extensions
 autocmd BufNewFile,BufRead *.json,.jshintrc,*.jsd set ft=javascript
-
-" Run hardline in every buffer
-let g:hardtime_default_on = 1
 
 " Ensure that EditorConfig works well with fugitive
 let g:EditorConfig_exclude_patterns = ['fugitive://.*']
