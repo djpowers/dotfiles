@@ -79,6 +79,9 @@ let g:user_emmet_settings = {
 \  },
 \}
 
+" Run linters when files are saved (not on change)
+let g:ale_lint_on_text_changed = 'never'
+
 " Set ALE fixers
 let g:ale_fixers = {
 \   'ruby': ['rubocop'],
