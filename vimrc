@@ -85,6 +85,7 @@ let g:ale_lint_on_text_changed = 'never'
 " Set ALE fixers
 let g:ale_fixers = {
 \   'ruby': ['rubocop'],
+\   'javascript': ['eslint'],
 \}
 
 " Disable automatic comment insertion
