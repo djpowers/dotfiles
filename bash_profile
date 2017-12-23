@@ -1,21 +1,22 @@
 export PATH=$(brew --prefix)/bin:$PATH
 
+# include .bashrc if it exists
+if [ -f "$HOME/.bashrc" ]; then
+    . "$HOME/.bashrc"
+fi
+
+# set up bash-completion if available
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
 
-export GIT_PS1_SHOWDIRTYSTATE=1
-export GIT_PS1_SHOWSTASHSTATE=1
-export GIT_PS1_SHOWUNTRACKEDFILES='verbose'
-export GIT_PS1_DESCRIBE_STYLE='branch'
-export GIT_PS1_SHOWUPSTREAM='verbose'
-
-PS1='\n\[\e[32m\]\u\[\e[0m\]@\[\e[34m\]\H\[\e[0m\] at \[\e[35m\]\w\[\e[0m\]'
-if type -t __git_ps1 | grep -q '^function$' 2>/dev/null; then
-    PS1=$PS1'$(__git_ps1)'
+# set up bash-git-prompt if available
+if [ -f "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh" ]; then
+  __GIT_PROMPT_DIR=$(brew --prefix)/opt/bash-git-prompt/share
+  source "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh"
 fi
-export PS1=$PS1'\n[\[\e[36m\]\D{%Y-%m-%d %T}\[\e[0m\]]\$ '
 
 alias ls='ls -G'
 alias ll='ls -la'
+alias reload='source ~/.bash_profile'
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
