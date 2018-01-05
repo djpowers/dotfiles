@@ -1,11 +1,11 @@
 [user]
-	name = Dave Powers
-	email = djpowers89@gmail.com
+  name = Dave Powers
+  email = djpowers89@gmail.com
 [core]
-	autocrlf = false
-	safecrlf = true
-	editor = /usr/bin/vim
-	excludesfile = ~/.gitignore_global
+  autocrlf = false
+  safecrlf = true
+  editor = /usr/bin/vim
+  excludesfile = ~/.gitignore_global
 [alias]
   co = checkout
   ci = commit
@@ -15,8 +15,7 @@
   type = cat-file -t
   dump = cat-file -p
 [push]
-	default = simple
+  default = simple
 [filter "media"]
-	clean = git-media-clean %f
-	smudge = git-media-smudge %f
-
+  clean = git-media-clean %f
+  smudge = git-media-smudge %f
