@@ -2,20 +2,14 @@
   name = Dave Powers
   email = djpowers89@gmail.com
 [core]
-  autocrlf = false
-  safecrlf = true
-  editor = /usr/bin/vim
+  editor = vim
   excludesfile = ~/.gitignore_global
+[push]
+  default = current
 [alias]
   co = checkout
   ci = commit
   st = status
   br = branch
-  hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
-  type = cat-file -t
-  dump = cat-file -p
-[push]
-  default = simple
-[filter "media"]
-  clean = git-media-clean %f
-  smudge = git-media-smudge %f
+  log-tree = log --graph --pretty=format:\"%C(auto)%h %d %s %Cblue<%an> %C(magenta)(%ar)\" --abbrev-commit
+  clean-tags = !git tag -l | xargs git tag -d && git fetch --tags
