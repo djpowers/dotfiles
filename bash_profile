@@ -14,6 +14,8 @@ if [ -f "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh" ]; then
   source "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh"
 fi
 
+eval "$(hub alias -s)"
+
 alias ls='ls -G'
 alias ll='ls -la'
 alias reload='source ~/.bash_profile'
