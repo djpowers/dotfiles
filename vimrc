@@ -24,6 +24,7 @@ Plug 'craigemery/vim-autotag'
 Plug 'mattn/emmet-vim'
 Plug 'w0rp/ale'
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
+Plug 'ap/vim-css-color'
 " Initialize plugin system
 call plug#end()
 
