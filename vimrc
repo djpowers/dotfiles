@@ -30,6 +30,10 @@ call plug#end()
 
 colorscheme cobalt2
 
+" Use filetype detection, as well as indent and plugins
+if has('autocmd')
+  filetype plugin indent on
+endif
 " Use syntax highlighting
 if has('syntax') && !exists('g:syntax_on')
   syntax enable
