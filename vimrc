@@ -30,7 +30,11 @@ call plug#end()
 
 colorscheme cobalt2
 
-syntax enable                 " Use syntax highlighting
+" Use syntax highlighting
+if has('syntax') && !exists('g:syntax_on')
+  syntax enable
+endif
+
 set number                    " Show current line number
 set relativenumber            " Show relative line numbers
 set listchars=tab:>-,trail:-  " Set character used to indicate unwanted spaces
