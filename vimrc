@@ -105,3 +105,8 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 " Open quickfix window after any grep invocation
 autocmd QuickFixCmdPost *grep* cwindow
+
+" Use previous default color scheme for GitGutter
+highlight GitGutterAdd    guifg=#009900 ctermfg=2
+highlight GitGutterChange guifg=#bbbb00 ctermfg=3
+highlight GitGutterDelete guifg=#ff2222 ctermfg=1
