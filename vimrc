@@ -25,6 +25,7 @@ Plug 'mattn/emmet-vim'
 Plug 'w0rp/ale'
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
 Plug 'ap/vim-css-color'
+Plug 'mcasper/vim-infer-debugger'
 " Initialize plugin system
 call plug#end()
 
@@ -110,3 +111,8 @@ autocmd QuickFixCmdPost *grep* cwindow
 highlight GitGutterAdd    guifg=#009900 ctermfg=2
 highlight GitGutterChange guifg=#bbbb00 ctermfg=3
 highlight GitGutterDelete guifg=#ff2222 ctermfg=1
+
+" Add mappings for vim-infer-debugger calls
+nmap <Leader>P :call AddDebugger("O")<cr>
+nmap <Leader>p :call AddDebugger("o")<cr>
+nmap <Leader>d :call RemoveAllDebuggers()<cr>
