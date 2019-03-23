@@ -113,6 +113,6 @@ highlight GitGutterChange guifg=#bbbb00 ctermfg=3
 highlight GitGutterDelete guifg=#ff2222 ctermfg=1
 
 " Add mappings for vim-infer-debugger calls
-nmap <Leader>P :call AddDebugger("O")<cr>
-nmap <Leader>p :call AddDebugger("o")<cr>
-nmap <Leader>d :call RemoveAllDebuggers()<cr>
+nnoremap <Leader>P :call AddDebugger("O")<cr>
+nnoremap <Leader>p :call AddDebugger("o")<cr>
+nnoremap <Leader>d :call RemoveAllDebuggers()<cr>
