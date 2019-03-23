@@ -59,6 +59,10 @@ set visualbell                " Use visual flash instead of beep on error
 set noswapfile                " http://robots.thoughtbot.com/post/18739402579/global-gitignore#comment-458413287
 set updatetime=250            " Set faster update time (for vim-gitgutter)
 
+" Mappings to edit and source vimrc file
+nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+nnoremap <leader>sv :source $MYVIMRC<cr>
+
 " Move up and down by physical lines if using a count, otherwise by visible lines
 nnoremap <expr> j v:count ? 'j' : 'gj'
 nnoremap <expr> k v:count ? 'k' : 'gk'
