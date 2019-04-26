@@ -15,6 +15,7 @@ if [ -f "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh" ]; then
 fi
 
 eval "$(hub alias -s)"
+eval $(thefuck --alias)
 
 alias ls='ls -G'
 alias ll='ls -la'
