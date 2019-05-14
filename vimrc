@@ -1,7 +1,7 @@
 " Automatic vim-plug installation
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+        \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
@@ -88,16 +88,16 @@ let g:ctrlp_use_caching = 0
 
 " Set Emmet to apply jsx settings to javascript.jsx filetype
 let g:user_emmet_settings = {
-\  'javascript.jsx' : {
-\      'extends' : 'jsx',
-\  },
-\}
+      \  'javascript.jsx' : {
+      \      'extends' : 'jsx',
+      \  },
+      \}
 
 " Set ALE fixers
 let g:ale_fixers = {
-\   'ruby': ['rubocop'],
-\   'javascript': ['prettier', 'eslint'],
-\}
+      \   'ruby': ['rubocop'],
+      \   'javascript': ['prettier', 'eslint'],
+      \}
 
 " Have ALE fix files automatically on save
 let g:ale_fix_on_save = 1
