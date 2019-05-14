@@ -120,3 +120,9 @@ highlight GitGutterDelete guifg=#ff2222 ctermfg=1
 nnoremap <Leader>P :call AddDebugger("O")<cr>
 nnoremap <Leader>p :call AddDebugger("o")<cr>
 nnoremap <Leader>d :call RemoveAllDebuggers()<cr>
+
+" Overwrite vim-infer-debugger default settings
+let g:user_debugger_dictionary = {
+      \ '\.rb': 'binding.pry',
+      \ '\.erb': '<% binding.pry %>',
+      \ }
