@@ -11,5 +11,6 @@
   ci = commit
   st = status
   br = branch
+  sw = switch
   log-tree = log --graph --pretty=format:\"%C(auto)%h %d %s %Cblue<%an> %C(magenta)(%ar)\" --abbrev-commit
   clean-tags = !git tag -l | xargs git tag -d && git fetch --tags
