@@ -40,6 +40,7 @@ if has('syntax') && !exists('g:syntax_on')
   syntax enable
 endif
 
+set nocompatible              " Explicitly set nocompatible
 set number                    " Show current line number
 set relativenumber            " Show relative line numbers
 set listchars=tab:>-,trail:-  " Set character used to indicate unwanted spaces
