@@ -1,10 +1,5 @@
 export PATH=$(brew --prefix)/bin:$PATH
 
-# include .bashrc if it exists
-if [ -f "$HOME/.bashrc" ]; then
-    . "$HOME/.bashrc"
-fi
-
 # set up bash-completion if available
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
 
