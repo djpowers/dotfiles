@@ -3,3 +3,4 @@ alias ll='ls -al'
 
 eval "$(hub alias -s)"
 eval "$(thefuck --alias)"
+eval "$(rbenv init -)"
