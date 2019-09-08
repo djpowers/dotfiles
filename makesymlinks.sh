@@ -13,12 +13,11 @@ olddir=~/dotfiles_old             # old dotfiles backup directory
 files="
   rbenv/default-gems
   agignore
-  bash_profile
-  bashrc
   ctags
   gitconfig
   gitignore_global
   vimrc
+  zshrc
 "
 
 ##########
