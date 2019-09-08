@@ -10,10 +10,6 @@ fi
 eval "$(hub alias -s)"
 eval $(thefuck --alias)
 
-alias ls='ls -G'
-alias ll='ls -la'
-alias reload='source ~/.bash_profile'
-
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 export NVM_DIR="$HOME/.nvm"
