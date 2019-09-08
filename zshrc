@@ -10,6 +10,9 @@ if [ -f "zsh-git-prompt/zshrc.sh" ]; then
   source "zsh-git-prompt/zshrc.sh"
   PROMPT='%(?.%F{green}√%f.%F{red}?%?%f) %F{yellow}%~%f $(git_super_status)
 %F{7}%T%f %# '
+else
+  PROMPT='%(?.%F{green}√%f.%F{red}?%?%f) %F{yellow}%~%f
+  %F{7}%T%f %# '
 fi
 
 # case insensitive path-completion
