@@ -5,8 +5,9 @@ eval "$(hub alias -s)"
 eval "$(thefuck --alias)"
 eval "$(rbenv init -)"
 
-if [ -f "$(brew --prefix)/opt/zsh-git-prompt/zshrc.sh" ]; then
-  source "$(brew --prefix)/opt/zsh-git-prompt/zshrc.sh"
+# run `git clone git@github.com:starcraftman/zsh-git-prompt.git`
+if [ -f "zsh-git-prompt/zshrc.sh" ]; then
+  source "zsh-git-prompt/zshrc.sh"
   PROMPT='%(?.%F{green}√%f.%F{red}?%?%f) %F{yellow}%~%f $(git_super_status)
 %F{7}%T%f %# '
 fi
