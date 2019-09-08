@@ -18,6 +18,7 @@ brew "tree"
 brew "vim"
 brew "yarn", args: ["without-node"]
 brew "youtube-dl"
+brew "zsh"
 brew "heroku/brew/heroku"
 brew "joshuaclayton/formulae/unused"
 cask "qlcolorcode"
