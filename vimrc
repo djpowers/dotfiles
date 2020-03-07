@@ -95,6 +95,10 @@ let g:user_emmet_settings = {
 let g:ale_fixers = {
       \   'ruby': ['rubocop'],
       \   'javascript': ['prettier', 'eslint'],
+      \   'html': ['prettier'],
+      \   'css': ['prettier'],
+      \   'markdown': ['prettier'],
+      \   'json': ['prettier'],
       \}
 
 " Have ALE fix files automatically on save
