@@ -14,6 +14,7 @@ brew "redis", restart_service: true
 brew "telnet"
 brew "the_silver_searcher"
 brew "thefuck"
+brew "tldr"
 brew "tree"
 brew "vim"
 brew "yarn", args: ["without-node"]
