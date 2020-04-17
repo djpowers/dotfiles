@@ -30,6 +30,8 @@ Plug 'mcasper/vim-infer-debugger'
 call plug#end()
 
 colorscheme cobalt2
+highlight Comment cterm=italic
+highlight htmlArg cterm=italic
 
 " Use filetype detection, as well as indent and plugins
 if has('autocmd')
