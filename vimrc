@@ -105,9 +105,6 @@ let g:ale_fixers = {
 " Have ALE fix files automatically on save
 let g:ale_fix_on_save = 1
 
-" Disable vim-polyglot syntax highlighting for Ruby files
-let g:polyglot_disabled = ['ruby']
-
 " Disable automatic comment insertion
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
