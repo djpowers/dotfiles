@@ -79,6 +79,15 @@ if maparg('<C-L>', 'n') ==# ''
   nnoremap <silent> <C-L> :nohlsearch<C-R>=has('diff')?'<Bar>diffupdate':''<CR><CR><C-L>
 endif
 
+" Add mapping to show highlight groups at current cursor position
+nnoremap <leader>sp :call <SID>SynStack()<CR>
+function! <SID>SynStack()
+  if !exists("*synstack")
+    return
+  endif
+  echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
+endfunc
+
 " Ensure that EditorConfig works well with fugitive
 let g:EditorConfig_exclude_patterns = ['fugitive://.*']
 
