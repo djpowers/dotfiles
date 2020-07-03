@@ -34,6 +34,18 @@ colorscheme cobalt2
 highlight Comment term=italic cterm=italic gui=italic
 highlight htmlArg term=italic cterm=italic gui=italic
 
+" Syntax highlighting customizations not natively supported by colorscheme
+highlight jsFuncParens ctermfg=Yellow guifg=Yellow
+highlight htmlArg ctermfg=Yellow guifg=Yellow
+highlight htmlString ctermfg=LightGreen guifg=LightGreen
+
+highlight graphqlStructure ctermfg=Green guifg=Green
+highlight graphqlName ctermfg=Green guifg=Green
+highlight graphqlBraces ctermfg=Green guifg=Green
+
+highlight jsxComponentName ctermfg=LightGreen guifg=LightGreen
+highlight jsxEqual ctermfg=DarkYellow guifg=DarkYellow
+
 " Use filetype detection, as well as indent and plugins
 if has('autocmd')
   filetype plugin indent on
