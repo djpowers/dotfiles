@@ -26,6 +26,7 @@ Plug 'dense-analysis/ale'
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
 Plug 'ap/vim-css-color'
 Plug 'mcasper/vim-infer-debugger'
+Plug 'tyru/open-browser.vim'
 " Initialize plugin system
 call plug#end()
 
@@ -87,6 +88,11 @@ function! <SID>SynStack()
   endif
   echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
 endfunc
+
+" Open browser
+let g:netrw_nogx = 1 " disable netrw's gx mapping.
+nmap gx <Plug>(openbrowser-smart-search)
+vmap gx <Plug>(openbrowser-smart-search)
 
 " Ensure that EditorConfig works well with fugitive
 let g:EditorConfig_exclude_patterns = ['fugitive://.*']
