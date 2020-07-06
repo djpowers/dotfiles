@@ -8,7 +8,8 @@ endif
 " Specify a directory for plugins
 call plug#begin('~/.vim/plugged')
 " Make sure you use single quotes
-Plug 'ctrlpvim/ctrlp.vim'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'tpope/vim-surround'
@@ -121,9 +122,10 @@ vmap gx <Plug>(openbrowser-smart-search)
 " Ensure that EditorConfig works well with fugitive
 let g:EditorConfig_exclude_patterns = ['fugitive://.*']
 
-" Make CtrlP use ag for listing the files. Way faster and no useless files.
-let g:ctrlp_user_command = 'ag %s -l --hidden --nocolor -g ""'
-let g:ctrlp_use_caching = 0
+" Remap fzf.vim keybindings
+nnoremap <C-p> :Files<CR>
+nnoremap <Leader>b :Buffers<CR>
+nnoremap <Leader>h :History<CR>
 
 " Set Emmet to apply jsx settings to javascript.jsx filetype
 let g:user_emmet_settings = {
