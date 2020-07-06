@@ -8,6 +8,9 @@ alias ll='ls -al'
 eval "$(thefuck --alias)"
 eval "$(rbenv init -)"
 
+# initialize fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
 # run `git clone git@github.com:starcraftman/zsh-git-prompt.git ~/.zsh-git-prompt`
 if [ -f ~/.zsh-git-prompt/zshrc.sh ]; then
   source ~/.zsh-git-prompt/zshrc.sh
