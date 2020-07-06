@@ -8,8 +8,9 @@ alias ll='ls -al'
 eval "$(thefuck --alias)"
 eval "$(rbenv init -)"
 
-# initialize fzf
+# initialize fzf and configure to use ripgrep
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export FZF_DEFAULT_COMMAND='rg --files --follow --hidden'
 
 # run `git clone git@github.com:starcraftman/zsh-git-prompt.git ~/.zsh-git-prompt`
 if [ -f ~/.zsh-git-prompt/zshrc.sh ]; then
