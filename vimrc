@@ -146,6 +146,9 @@ let g:ale_fixers = {
 " Have ALE fix files automatically on save
 let g:ale_fix_on_save = 1
 
+" Have Python use 'fork' instead of default 'spawn'
+let g:autotagStartMethod='fork'
+
 " Disable automatic comment insertion
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
