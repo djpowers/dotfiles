@@ -9,6 +9,7 @@ brew "ctags"
 brew "fzf"
 brew "gh"
 brew "git"
+brew "graphviz"
 brew "nvm"
 brew "postgresql", restart_service: true
 brew "rbenv"
