@@ -12,6 +12,7 @@ olddir=~/dotfiles_old             # old dotfiles backup directory
 # list of files/folders to symlink in homedir
 files="
   rbenv/default-gems
+  nvm/default-packages
   ctags
   gitconfig
   gitignore_global
