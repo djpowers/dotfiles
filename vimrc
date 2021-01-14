@@ -46,6 +46,8 @@ highlight graphqlBraces ctermfg=Green guifg=Green
 
 highlight jsxComponentName ctermfg=LightGreen guifg=LightGreen
 
+highlight SpellBad ctermfg=DarkRed guifg=DarkRed
+
 highlight link jsxOpenPunct htmlTag
 highlight link jsxClosePunct htmlTag
 highlight link jsxCloseString htmlTag
