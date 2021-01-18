@@ -154,6 +154,9 @@ let g:ale_fixers = {
       \   'json': ['prettier'],
       \}
 
+" Override the invoked Rubocop binary (to run bundled version)
+let g:ale_ruby_rubocop_executable = 'bundle'
+
 " Have ALE fix files automatically on save
 let g:ale_fix_on_save = 1
 
