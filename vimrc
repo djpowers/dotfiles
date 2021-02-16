@@ -160,6 +160,12 @@ let g:ale_ruby_rubocop_executable = 'bundle'
 " Have ALE fix files automatically on save
 let g:ale_fix_on_save = 1
 
+" Show ALE suggestions during typing
+let g:ale_completion_enabled = 1
+
+" Use ALE's function for omnicompletion
+set omnifunc=ale#completion#OmniFunc
+
 " Have Python use 'fork' instead of default 'spawn'
 let g:autotagStartMethod='fork'
 
