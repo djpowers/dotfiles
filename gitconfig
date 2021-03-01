@@ -3,9 +3,6 @@
   email = djpowers89@gmail.com
 [core]
   excludesfile = ~/.gitignore_global
-[url "git@github.com:"]
-  insteadOf = http://github.com/
-  insteadOf = https://github.com/
 [push]
   default = current
 [pull]
