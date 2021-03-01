@@ -18,5 +18,10 @@ Install [Homebrew](https://brew.sh/) and run the `bundle` command to install pac
 brew bundle
 ```
 
+Install [Node.js](https://nodejs.org/en/):
+```shell
+nvm install --lts
+```
+
 ### References
 * [Using Git and GitHub to Manage Your Dotfiles](http://blog.smalleycreative.com/tutorials/using-git-and-github-to-manage-your-dotfiles/)
