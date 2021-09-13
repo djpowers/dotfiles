@@ -25,7 +25,7 @@ brew "tree"
 brew "typescript"
 brew "vim"
 brew "watchman"
-brew "yarn", args: ["without-node"]
+brew "yarn"
 brew "youtube-dl"
 brew "zsh"
 brew "heroku/brew/heroku"
