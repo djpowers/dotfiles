@@ -5,22 +5,13 @@ export EDITOR="$VISUAL"
 
 alias ll='ls -al'
 
+eval "$(starship init zsh)"
 eval "$(thefuck --alias)"
 eval "$(rbenv init -)"
 
 # initialize fzf and configure to use ripgrep
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_COMMAND='rg --files --follow --hidden'
-
-# run `git clone https://github.com/starcraftman/zsh-git-prompt ~/.zsh-git-prompt`
-if [ -f ~/.zsh-git-prompt/zshrc.sh ]; then
-  source ~/.zsh-git-prompt/zshrc.sh
-  PROMPT='%(?.%F{green}√%f.%F{red}?%?%f) %F{yellow}%~%f $(git_super_status)
-%F{7}%T%f %# '
-else
-  PROMPT='%(?.%F{green}√%f.%F{red}?%?%f) %F{yellow}%~%f
-  %F{7}%T%f %# '
-fi
 
 # case insensitive path-completion
 zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*'
