@@ -11,6 +11,7 @@ olddir=~/dotfiles_old             # old dotfiles backup directory
 
 # list of files/folders to symlink in homedir
 files="
+  config/starship.toml
   rbenv/default-gems
   nvm/default-packages
   ctags
