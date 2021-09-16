@@ -1,3 +1,6 @@
+[git_branch]
+always_show_remote = true
+format = "on [$symbol$branch(:$remote_name)]($style) "
 [git_status]
 ahead = "⇡${count}"
 diverged = "⇕⇡${ahead_count}⇣${behind_count}"
