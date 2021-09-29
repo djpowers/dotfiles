@@ -10,7 +10,10 @@ eval "$(rbenv init -)"
 
 export NVM_LAZY_LOAD=true
 
-source /usr/local/opt/zinit/zinit.zsh
+# account for different Homebrew install paths
+[ -f /usr/local/opt/zinit/zinit.zsh ] && source /usr/local/opt/zinit/zinit.zsh
+[ -f /opt/homebrew/opt/zinit/zinit.zsh ] && source /opt/homebrew/opt/zinit/zinit.zsh
+
 zinit light lukechilds/zsh-nvm
 
 # initialize fzf and configure to use ripgrep
