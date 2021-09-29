@@ -19,7 +19,6 @@ brew "redis", restart_service: true
 brew "ripgrep"
 brew "starship"
 brew "telnet"
-brew "thefuck"
 brew "tldr"
 brew "tree"
 brew "typescript"

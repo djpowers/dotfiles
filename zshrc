@@ -6,7 +6,6 @@ export EDITOR="$VISUAL"
 alias ll='ls -al'
 
 eval "$(starship init zsh)"
-eval "$(thefuck --alias)"
 eval "$(rbenv init -)"
 
 source /usr/local/opt/zinit/zinit.zsh
