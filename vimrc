@@ -20,7 +20,6 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
 Plug 'tpope/vim-endwise'
 Plug 'sheerun/vim-polyglot'
-Plug 'flazz/vim-colorschemes'
 Plug 'craigemery/vim-autotag'
 Plug 'mattn/emmet-vim'
 Plug 'dense-analysis/ale'
@@ -30,32 +29,6 @@ Plug 'mcasper/vim-infer-debugger'
 Plug 'tyru/open-browser.vim'
 " Initialize plugin system
 call plug#end()
-
-colorscheme cobalt2
-highlight Comment term=italic cterm=italic gui=italic
-highlight htmlArg term=italic cterm=italic gui=italic
-
-" Syntax highlighting customizations not natively supported by colorscheme
-highlight jsFuncParens ctermfg=Yellow guifg=Yellow
-highlight htmlArg ctermfg=Yellow guifg=Yellow
-highlight htmlString ctermfg=LightGreen guifg=LightGreen
-
-highlight graphqlStructure ctermfg=Green guifg=Green
-highlight graphqlName ctermfg=Green guifg=Green
-highlight graphqlBraces ctermfg=Green guifg=Green
-
-highlight jsxComponentName ctermfg=LightGreen guifg=LightGreen
-
-highlight SpellBad ctermfg=DarkRed guifg=DarkRed
-
-highlight link jsxOpenPunct htmlTag
-highlight link jsxClosePunct htmlTag
-highlight link jsxCloseString htmlTag
-highlight link jsxEqual htmlTag
-highlight link jsxTagName htmlTagName
-highlight link jsObjectKey htmlTagName
-highlight link jsxAttrib htmlArg
-highlight link jsString htmlString
 
 " Use filetype detection, as well as indent and plugins
 if has('autocmd')
