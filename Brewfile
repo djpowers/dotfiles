@@ -13,6 +13,7 @@ brew "fzf"
 brew "gh"
 brew "git"
 brew "graphviz"
+brew "neofetch"
 brew "postgresql", restart_service: true
 brew "rbenv"
 brew "redis", restart_service: true
