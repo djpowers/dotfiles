@@ -20,7 +20,6 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
 Plug 'tpope/vim-endwise'
 Plug 'sheerun/vim-polyglot'
-Plug 'flazz/vim-colorschemes'
 Plug 'craigemery/vim-autotag'
 Plug 'mattn/emmet-vim'
 Plug 'dense-analysis/ale'
@@ -28,34 +27,16 @@ Plug 'jeffkreeftmeijer/vim-numbertoggle'
 Plug 'ap/vim-css-color'
 Plug 'mcasper/vim-infer-debugger'
 Plug 'tyru/open-browser.vim'
+Plug 'arcticicestudio/nord-vim'
 " Initialize plugin system
 call plug#end()
 
-colorscheme cobalt2
-highlight Comment term=italic cterm=italic gui=italic
-highlight htmlArg term=italic cterm=italic gui=italic
+set termguicolors
 
-" Syntax highlighting customizations not natively supported by colorscheme
-highlight jsFuncParens ctermfg=Yellow guifg=Yellow
-highlight htmlArg ctermfg=Yellow guifg=Yellow
-highlight htmlString ctermfg=LightGreen guifg=LightGreen
-
-highlight graphqlStructure ctermfg=Green guifg=Green
-highlight graphqlName ctermfg=Green guifg=Green
-highlight graphqlBraces ctermfg=Green guifg=Green
-
-highlight jsxComponentName ctermfg=LightGreen guifg=LightGreen
-
-highlight SpellBad ctermfg=DarkRed guifg=DarkRed
-
-highlight link jsxOpenPunct htmlTag
-highlight link jsxClosePunct htmlTag
-highlight link jsxCloseString htmlTag
-highlight link jsxEqual htmlTag
-highlight link jsxTagName htmlTagName
-highlight link jsObjectKey htmlTagName
-highlight link jsxAttrib htmlArg
-highlight link jsString htmlString
+let g:nord_italic = 1
+let g:nord_italic_comments = 1
+let g:nord_underline = 1
+colorscheme nord
 
 " Use filetype detection, as well as indent and plugins
 if has('autocmd')
@@ -174,11 +155,6 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 " Open quickfix window after any grep invocation
 autocmd QuickFixCmdPost *grep* cwindow
-
-" Use previous default color scheme for GitGutter
-highlight GitGutterAdd    guifg=#009900 ctermfg=2
-highlight GitGutterChange guifg=#bbbb00 ctermfg=3
-highlight GitGutterDelete guifg=#ff2222 ctermfg=1
 
 " Add mappings for vim-infer-debugger calls
 nnoremap <leader>P :call AddDebugger("O")<cr>
