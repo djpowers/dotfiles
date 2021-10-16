@@ -27,8 +27,16 @@ Plug 'jeffkreeftmeijer/vim-numbertoggle'
 Plug 'ap/vim-css-color'
 Plug 'mcasper/vim-infer-debugger'
 Plug 'tyru/open-browser.vim'
+Plug 'arcticicestudio/nord-vim'
 " Initialize plugin system
 call plug#end()
+
+set termguicolors
+
+let g:nord_italic = 1
+let g:nord_italic_comments = 1
+let g:nord_underline = 1
+colorscheme nord
 
 " Use filetype detection, as well as indent and plugins
 if has('autocmd')
