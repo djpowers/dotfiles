@@ -28,6 +28,7 @@ Plug 'ap/vim-css-color'
 Plug 'mcasper/vim-infer-debugger'
 Plug 'tyru/open-browser.vim'
 Plug 'arcticicestudio/nord-vim'
+Plug 'suy/vim-context-commentstring'
 " Initialize plugin system
 call plug#end()
 
