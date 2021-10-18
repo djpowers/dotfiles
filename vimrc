@@ -165,4 +165,5 @@ nnoremap <leader>d :call RemoveAllDebuggers()<cr>
 let g:user_debugger_dictionary = {
       \ '\.rb': 'binding.pry',
       \ '\.erb': '<% binding.pry %>',
+      \ '\.vue': 'debugger',
       \ }
