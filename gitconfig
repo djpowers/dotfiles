@@ -3,6 +3,8 @@
   email = djpowers89@gmail.com
 [core]
   excludesfile = ~/.gitignore_global
+[init]
+  defaultBranch = main
 [url "ssh://git@github.com/"]
   pushInsteadOf = https://github.com/
 [push]
