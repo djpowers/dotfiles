@@ -12,6 +12,7 @@ brew "fx"
 brew "fzf"
 brew "gh"
 brew "git"
+brew "glow"
 brew "graphviz"
 brew "neofetch"
 brew "postgresql", restart_service: true
