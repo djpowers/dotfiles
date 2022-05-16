@@ -130,6 +130,7 @@ let g:user_emmet_settings = {
 let g:ale_fixers = {
       \   'ruby': ['rubocop'],
       \   'javascript': ['prettier', 'eslint'],
+      \   'vue': ['prettier', 'eslint', 'stylelint'],
       \   'html': ['prettier'],
       \   'css': ['prettier'],
       \   'markdown': ['prettier'],
