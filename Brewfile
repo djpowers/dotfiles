@@ -15,6 +15,7 @@ brew "git"
 brew "glow"
 brew "graphviz"
 brew "neofetch"
+brew "ocrmypdf"
 brew "postgresql", restart_service: true
 brew "rbenv"
 brew "redis", restart_service: true
