@@ -14,6 +14,7 @@ brew "gh"
 brew "git"
 brew "glow"
 brew "graphviz"
+brew "k9s"
 brew "neofetch"
 brew "ocrmypdf"
 brew "postgresql", restart_service: true
