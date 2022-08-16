@@ -11,6 +11,8 @@ olddir=~/dotfiles_old             # old dotfiles backup directory
 
 # list of files/folders to symlink in homedir
 files="
+  config/nvim/init.lua
+  config/nvim/lua/plugins.lua
   config/starship.toml
   rbenv/default-gems
   nvm/default-packages
@@ -36,6 +38,7 @@ echo "...done"
 # move any existing dotfiles in homedir to dotfiles_old directory, then create symlinks
 for file in $files; do
     echo "Moving any existing dotfiles from ~ to $olddir"
+    mkdir -p ~/.$file
     mv ~/.$file ~/dotfiles_old/
     echo "Creating symlink to $file in home directory."
     ln -s $dir/$file ~/.$file
