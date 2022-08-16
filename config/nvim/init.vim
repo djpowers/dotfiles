@@ -130,12 +130,16 @@ let g:user_emmet_settings = {
 let g:ale_fixers = {
       \   'ruby': ['rubocop'],
       \   'javascript': ['prettier', 'eslint'],
+      \   'typescript': ['prettier', 'eslint'],
       \   'vue': ['prettier', 'eslint', 'stylelint'],
       \   'html': ['prettier'],
       \   'css': ['prettier'],
       \   'markdown': ['prettier'],
       \   'json': ['prettier'],
       \}
+
+" Add ALE typescript support
+let g:ale_linter_aliases = {'typescriptreact': 'typescript'}
 
 " Override the invoked Rubocop binary (to run bundled version)
 let g:ale_ruby_rubocop_executable = 'bundle'
