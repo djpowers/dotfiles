@@ -1,23 +1,17 @@
 local fn = vim.fn
-
-vim.g.package_home = fn.stdpath("data") .. "/site/pack/packer/"
-local packer_install_dir = vim.g.package_home .. "/opt/packer.nvim"
-
-local plug_url_format = ""
-if vim.g.is_linux then
-  plug_url_format = "https://hub.fastgit.org/%s"
-else
-  plug_url_format = "https://github.com/%s"
+local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
+if fn.empty(fn.glob(install_path)) > 0 then
+   packer_bootstrap = fn.system({'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path})
+   vim.o.runtimepath = vim.fn.stdpath('data') .. '/site/pack/*/start/*,' .. vim.o.runtimepath
 end
 
-local packer_repo = string.format(plug_url_format, "wbthomason/packer.nvim")
-local install_cmd = string.format("10split |term git clone --depth=1 %s %s", packer_repo, packer_install_dir)
+return require('packer').startup(function(use)
+   -- make sure to add this line to let packer manage itself
+   use 'wbthomason/packer.nvim'
 
--- Auto-install packer in case it hasn't been installed.
-if fn.glob(packer_install_dir) == "" then
-  vim.api.nvim_echo({ { "Installing packer.nvim", "Type" } }, true, {})
-  vim.cmd(install_cmd)
-end
-
--- Load packer.nvim
-vim.cmd("packadd packer.nvim")
+   -- Automatically set up your configuration after cloning packer.nvim
+   -- Put this at the end after all plugins
+   if packer_bootstrap then
+     require('packer').sync()
+   end
+end)
