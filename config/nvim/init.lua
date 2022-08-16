@@ -13,7 +13,6 @@ require 'plugins'
 --" " Make sure you use single quotes
 --" Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 --" Plug 'junegunn/fzf.vim'
---" Plug 'airblade/vim-gitgutter'
 --" Plug 'editorconfig/editorconfig-vim'
 --" Plug 'tpope/vim-surround'
 --" Plug 'tpope/vim-repeat'

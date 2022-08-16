@@ -9,6 +9,14 @@ return require('packer').startup(function(use)
    -- make sure to add this line to let packer manage itself
    use 'wbthomason/packer.nvim'
 
+   -- plugins
+   use {
+    'lewis6991/gitsigns.nvim',
+     config = function()
+       require('gitsigns').setup()
+     end
+   }
+
    -- Automatically set up your configuration after cloning packer.nvim
    -- Put this at the end after all plugins
    if packer_bootstrap then
