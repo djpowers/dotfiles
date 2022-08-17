@@ -29,7 +29,6 @@ require('nvim_comment').setup()
 --" " Specify a directory for plugins
 --" call plug#begin('~/.vim/plugged')
 --" " Make sure you use single quotes
---" Plug 'editorconfig/editorconfig-vim'
 --" Plug 'tpope/vim-surround'
 --" Plug 'tpope/vim-repeat'
 --" Plug 'tpope/vim-rails'

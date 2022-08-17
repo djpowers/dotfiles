@@ -66,6 +66,7 @@ return require('packer').startup(function(use)
    use 'norcalli/nvim-colorizer.lua'
    use 'shaunsingh/nord.nvim'
    use 'terrortylor/nvim-comment'
+   use 'gpanders/editorconfig.nvim'
 
    -- Automatically set up your configuration after cloning packer.nvim
    -- Put this at the end after all plugins
