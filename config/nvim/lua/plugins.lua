@@ -20,6 +20,7 @@ return require('packer').startup(function(use)
        require('gitsigns').setup()
      end
    }
+   use 'norcalli/nvim-colorizer.lua'
 
    -- Automatically set up your configuration after cloning packer.nvim
    -- Put this at the end after all plugins

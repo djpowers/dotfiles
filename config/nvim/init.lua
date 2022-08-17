@@ -7,6 +7,9 @@ vim.api.nvim_set_keymap('n', '<leader>fg', [[<cmd>lua require('telescope.builtin
 vim.api.nvim_set_keymap('n', '<leader>fb', [[<cmd>lua require('telescope.builtin').buffers()<CR>]], { noremap = true })
 vim.api.nvim_set_keymap('n', '<leader>fh', [[<cmd>lua require('telescope.builtin').help_tags()<CR>]], { noremap = true })
 
+-- Set up colorizer
+vim.opt.termguicolors = true
+require'colorizer'.setup()
 --" " Automatic vim-plug installation
 --" if empty(glob('~/.vim/autoload/plug.vim'))
 --"   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
@@ -30,15 +33,12 @@ vim.api.nvim_set_keymap('n', '<leader>fh', [[<cmd>lua require('telescope.builtin
 --" Plug 'mattn/emmet-vim'
 --" Plug 'dense-analysis/ale'
 --" Plug 'jeffkreeftmeijer/vim-numbertoggle'
---" Plug 'ap/vim-css-color'
 --" Plug 'mcasper/vim-infer-debugger'
 --" Plug 'tyru/open-browser.vim'
 --" Plug 'arcticicestudio/nord-vim'
 --" Plug 'suy/vim-context-commentstring'
 --" " Initialize plugin system
 --" call plug#end()
---" 
---" set termguicolors
 --" 
 --" let g:nord_italic = 1
 --" let g:nord_italic_comments = 1
