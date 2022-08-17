@@ -1,6 +1,9 @@
 -- plugin installation
 require 'plugins'
 
+-- Set colorscheme
+vim.cmd[[colorscheme nord]]
+
 -- Telescope find file functions
 vim.api.nvim_set_keymap('n', '<leader>ff', [[<cmd>lua require('telescope.builtin').find_files()<CR>]], { noremap = true })
 vim.api.nvim_set_keymap('n', '<leader>fg', [[<cmd>lua require('telescope.builtin').live_grep()<CR>]], { noremap = true })
@@ -39,11 +42,6 @@ require'colorizer'.setup()
 --" Plug 'suy/vim-context-commentstring'
 --" " Initialize plugin system
 --" call plug#end()
---" 
---" let g:nord_italic = 1
---" let g:nord_italic_comments = 1
---" let g:nord_underline = 1
---" colorscheme nord
 --" 
 --" " Use filetype detection, as well as indent and plugins
 --" if has('autocmd')
