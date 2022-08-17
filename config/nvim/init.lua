@@ -1,6 +1,12 @@
 -- plugin installation
 require 'plugins'
 
+-- Telescope find file functions
+vim.api.nvim_set_keymap('n', '<leader>ff', [[<cmd>lua require('telescope.builtin').find_files()<CR>]], { noremap = true })
+vim.api.nvim_set_keymap('n', '<leader>fg', [[<cmd>lua require('telescope.builtin').live_grep()<CR>]], { noremap = true })
+vim.api.nvim_set_keymap('n', '<leader>fb', [[<cmd>lua require('telescope.builtin').buffers()<CR>]], { noremap = true })
+vim.api.nvim_set_keymap('n', '<leader>fh', [[<cmd>lua require('telescope.builtin').help_tags()<CR>]], { noremap = true })
+
 --" " Automatic vim-plug installation
 --" if empty(glob('~/.vim/autoload/plug.vim'))
 --"   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
@@ -11,8 +17,6 @@ require 'plugins'
 --" " Specify a directory for plugins
 --" call plug#begin('~/.vim/plugged')
 --" " Make sure you use single quotes
---" Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
---" Plug 'junegunn/fzf.vim'
 --" Plug 'editorconfig/editorconfig-vim'
 --" Plug 'tpope/vim-surround'
 --" Plug 'tpope/vim-repeat'
