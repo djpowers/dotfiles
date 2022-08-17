@@ -10,6 +10,19 @@ vim.api.nvim_set_keymap('n', '<leader>fg', [[<cmd>lua require('telescope.builtin
 vim.api.nvim_set_keymap('n', '<leader>fb', [[<cmd>lua require('telescope.builtin').buffers()<CR>]], { noremap = true })
 vim.api.nvim_set_keymap('n', '<leader>fh', [[<cmd>lua require('telescope.builtin').help_tags()<CR>]], { noremap = true })
 
+-- Set up treesitter
+require('nvim-treesitter.configs').setup {
+  -- A list of parser names, or "all"
+  ensure_installed = { "lua", "ruby", "typescript" },
+  -- Install parsers synchronously (only applied to `ensure_installed`)
+  sync_install = false,
+  -- Automatically install missing parsers when entering buffer
+  auto_install = true,
+  highlight = {
+    enable = true
+  }
+}
+
 -- Set up lualine
 require('lualine').setup()
 
@@ -35,7 +48,6 @@ require('nvim_comment').setup()
 --" Plug 'tpope/vim-fugitive'
 --" Plug 'tpope/vim-rhubarb'
 --" Plug 'tpope/vim-endwise'
---" Plug 'sheerun/vim-polyglot'
 --" Plug 'ludovicchabant/vim-gutentags'
 --" Plug 'mattn/emmet-vim'
 --" Plug 'dense-analysis/ale'
