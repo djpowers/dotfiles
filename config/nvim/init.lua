@@ -10,6 +10,9 @@ vim.api.nvim_set_keymap('n', '<leader>fg', [[<cmd>lua require('telescope.builtin
 vim.api.nvim_set_keymap('n', '<leader>fb', [[<cmd>lua require('telescope.builtin').buffers()<CR>]], { noremap = true })
 vim.api.nvim_set_keymap('n', '<leader>fh', [[<cmd>lua require('telescope.builtin').help_tags()<CR>]], { noremap = true })
 
+-- Set up lualine
+require('lualine').setup()
+
 -- Set up colorizer
 vim.opt.termguicolors = true
 require'colorizer'.setup()
