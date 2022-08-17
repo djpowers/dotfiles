@@ -16,6 +16,9 @@ require('lualine').setup()
 -- Set up colorizer
 vim.opt.termguicolors = true
 require'colorizer'.setup()
+
+-- Set up nvim-comment
+require('nvim_comment').setup()
 --" " Automatic vim-plug installation
 --" if empty(glob('~/.vim/autoload/plug.vim'))
 --"   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
@@ -30,7 +33,6 @@ require'colorizer'.setup()
 --" Plug 'tpope/vim-surround'
 --" Plug 'tpope/vim-repeat'
 --" Plug 'tpope/vim-rails'
---" Plug 'tpope/vim-commentary'
 --" Plug 'tpope/vim-fugitive'
 --" Plug 'tpope/vim-rhubarb'
 --" Plug 'tpope/vim-endwise'
