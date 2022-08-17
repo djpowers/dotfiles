@@ -32,6 +32,9 @@ require'colorizer'.setup()
 
 -- Set up nvim-comment
 require('nvim_comment').setup()
+
+-- Set up leap
+require('leap').set_default_keymaps()
 --" " Automatic vim-plug installation
 --" if empty(glob('~/.vim/autoload/plug.vim'))
 --"   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
