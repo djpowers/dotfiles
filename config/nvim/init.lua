@@ -26,6 +26,22 @@ require('nvim-treesitter.configs').setup {
 -- Set up nvim-cmp (completion)
 require("luasnip/loaders/from_vscode").lazy_load()
 
+-- Set up mason (lsp)
+require("mason").setup()
+require('mason-lspconfig').setup()
+
+-- Completion
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
+
+require("mason-lspconfig").setup_handlers {
+  function (server_name)
+    require("lspconfig")[server_name].setup {
+      capabilities = capabilities,
+    }
+  end,
+}
+
 local cmp = require'cmp'
 
   cmp.setup({
@@ -47,6 +63,7 @@ local cmp = require'cmp'
       ['<CR>'] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
     }),
     sources = cmp.config.sources({
+      { name = 'nvim_lsp' },
       { name = 'luasnip' }, -- For luasnip users.
       { name = 'buffer' },
       { name = 'path' },
