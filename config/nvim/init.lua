@@ -12,6 +12,8 @@ vim.opt.smartindent = true     -- automatically insert one extra level of indent
 vim.opt.expandtab = true       -- tab key (in insert mode) inserts spaces instead of tab characters
 vim.opt.tabstop = 2            -- width of hard tabstop measured in 'spaces' (maximum width of an actual tab character
 vim.opt.shiftwidth = 2         -- size of an 'indent' measured in spaces
+vim.opt.splitbelow = true      -- force all horizontal splits to go below current window
+vim.opt.splitright = true      -- force all vertical splits to go to the right of current window
 
 -- Set colorscheme
 vim.cmd[[colorscheme nord]]
@@ -138,10 +140,6 @@ require('leap').set_default_keymaps()
 --" " Move up and down by physical lines if using a count, otherwise by visible lines
 --" nnoremap <expr> j v:count ? 'j' : 'gj'
 --" nnoremap <expr> k v:count ? 'k' : 'gk'
---" 
---" " Open new split panes to right and bottom, which feels more natural
---" set splitbelow
---" set splitright
 --" 
 --" " Hide Netrw banner by default (toggle with `I`); add mapping to open one directory up
 --" let g:netrw_banner = 0
