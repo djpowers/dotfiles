@@ -13,6 +13,7 @@ olddir=~/dotfiles_old             # old dotfiles backup directory
 files="
   config/nvim/init.lua
   config/nvim/lua/user/options.lua
+  config/nvim/lua/user/keymaps.lua
   config/nvim/lua/user/plugins.lua
   config/starship.toml
   rbenv/default-gems

@@ -1,9 +1,7 @@
 require "user.options"
+require "user.keymaps"
 -- plugin installation
 require 'user.plugins'
-
--- Set leader to <Space>
-vim.g.mapleader = " "
 
 -- Set colorscheme
 vim.cmd[[colorscheme nord]]
