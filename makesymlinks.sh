@@ -12,7 +12,8 @@ olddir=~/dotfiles_old             # old dotfiles backup directory
 # list of files/folders to symlink in homedir
 files="
   config/nvim/init.lua
-  config/nvim/lua/plugins.lua
+  config/nvim/lua/user/options.lua
+  config/nvim/lua/user/plugins.lua
   config/starship.toml
   rbenv/default-gems
   nvm/default-packages

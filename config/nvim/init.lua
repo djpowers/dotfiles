@@ -1,5 +1,5 @@
 -- plugin installation
-require 'plugins'
+require 'user.plugins'
 
 -- Set leader to <Space>
 vim.g.mapleader = " "
