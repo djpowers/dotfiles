@@ -15,6 +15,7 @@ files="
   config/nvim/lua/user/options.lua
   config/nvim/lua/user/keymaps.lua
   config/nvim/lua/user/plugins.lua
+  config/nvim/lua/user/colorscheme.lua
   config/starship.toml
   rbenv/default-gems
   nvm/default-packages

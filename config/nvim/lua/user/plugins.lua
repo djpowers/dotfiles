@@ -34,6 +34,10 @@ packer.init {
 return require('packer').startup(function(use)
   -- My plugins here
    use 'wbthomason/packer.nvim' -- Have packer manage itself
+
+   -- Colorschemes
+   use 'shaunsingh/nord.nvim' -- An arctic, north-bluish clean and elegant Vim theme
+
    use {
      'nvim-lualine/lualine.nvim',
      requires = { 'kyazdani42/nvim-web-devicons', opt = true }
@@ -108,7 +112,6 @@ return require('packer').startup(function(use)
      end
    }
    use 'norcalli/nvim-colorizer.lua'
-   use 'shaunsingh/nord.nvim'
    use 'terrortylor/nvim-comment'
    use 'gpanders/editorconfig.nvim'
    use 'ggandor/leap.nvim'

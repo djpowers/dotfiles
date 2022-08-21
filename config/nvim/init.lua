@@ -1,10 +1,7 @@
 require "user.options"
 require "user.keymaps"
--- plugin installation
-require 'user.plugins'
-
--- Set colorscheme
-vim.cmd[[colorscheme nord]]
+require "user.plugins"
+require "user.colorscheme"
 
 -- Telescope find file functions
 vim.api.nvim_set_keymap('n', '<leader>ff', [[<cmd>lua require('telescope.builtin').find_files()<CR>]], { noremap = true })
@@ -82,7 +79,6 @@ cmp.setup({
 require('lualine').setup()
 
 -- Set up colorizer
-vim.opt.termguicolors = true
 require'colorizer'.setup()
 
 -- Set up nvim-comment
