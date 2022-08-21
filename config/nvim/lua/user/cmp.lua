@@ -34,7 +34,14 @@ cmp.setup({
     ['<CR>'] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
   }),
   formatting = {
-    format = lspkind.cmp_format(),
+    format = lspkind.cmp_format({
+      mode = "symbol_text",
+      menu = ({
+        buffer = "[Buffer]",
+        luasnip = "[LuaSnip]",
+        path = "[Path]",
+      }),
+    }),
   },
   sources = cmp.config.sources({
     { name = 'nvim_lsp' },
