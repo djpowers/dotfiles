@@ -15,6 +15,21 @@ vim.cmd [[
   augroup end
 ]]
 
+-- Use a protected call so we don't error out on first use
+local status_ok, packer = pcall(require, "packer")
+if not status_ok then
+  return
+end
+
+-- Have packer use a popup window
+packer.init {
+  display = {
+    open_fn = function()
+      return require("packer.util").float { border = "rounded" }
+    end,
+  },
+}
+
 return require('packer').startup(function(use)
    -- make sure to add this line to let packer manage itself
    use 'wbthomason/packer.nvim'
