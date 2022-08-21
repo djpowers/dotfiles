@@ -30,11 +30,10 @@ packer.init {
   },
 }
 
+-- Install your plugins here
 return require('packer').startup(function(use)
-   -- make sure to add this line to let packer manage itself
-   use 'wbthomason/packer.nvim'
-
-   -- plugins
+  -- My plugins here
+   use 'wbthomason/packer.nvim' -- Have packer manage itself
    use {
      'nvim-lualine/lualine.nvim',
      requires = { 'kyazdani42/nvim-web-devicons', opt = true }
