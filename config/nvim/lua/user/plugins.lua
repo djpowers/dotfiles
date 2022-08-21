@@ -45,6 +45,7 @@ return require('packer').startup(function(use)
    use 'hrsh7th/cmp-cmdline' -- cmdline completions
    use 'saadparwaiz1/cmp_luasnip' -- snippet completions
    use 'hrsh7th/cmp-nvim-lsp'
+   use 'onsails/lspkind.nvim' -- vscode-like pictograms for neovim lsp completion items
 
    -- snippets
    use "L3MON4D3/LuaSnip" --snippet engine

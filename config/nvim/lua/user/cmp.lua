@@ -8,6 +8,11 @@ if not snip_status_ok then
   return
 end
 
+local lspkind_status_ok, lspkind = pcall(require, "lspkind")
+if not lspkind_status_ok then
+  return
+end
+
 require("luasnip/loaders/from_vscode").lazy_load()
 
 cmp.setup({
@@ -28,6 +33,9 @@ cmp.setup({
     ['<C-e>'] = cmp.mapping.abort(),
     ['<CR>'] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
   }),
+  formatting = {
+    format = lspkind.cmp_format(),
+  },
   sources = cmp.config.sources({
     { name = 'nvim_lsp' },
     { name = 'luasnip' }, -- For luasnip users.
