@@ -44,12 +44,17 @@ return require('packer').startup(function(use)
    use 'hrsh7th/cmp-path' -- path completions
    use 'hrsh7th/cmp-cmdline' -- cmdline completions
    use 'saadparwaiz1/cmp_luasnip' -- snippet completions
-   use 'hrsh7th/cmp-nvim-lsp'
+   use 'hrsh7th/cmp-nvim-lsp' -- LSP completions
    use 'onsails/lspkind.nvim' -- vscode-like pictograms for neovim lsp completion items
 
    -- snippets
    use "L3MON4D3/LuaSnip" --snippet engine
    use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
+
+   -- LSP
+   use "neovim/nvim-lspconfig" -- Quickstart configs for Nvim LSP
+   use "williamboman/mason.nvim" -- Easily install and manage LSP servers, DAP servers, linters, and formatters
+   use "williamboman/mason-lspconfig.nvim" -- makes it easier to use lspconfig with mason.nvim
 
    use {
      'nvim-lualine/lualine.nvim',
@@ -59,11 +64,6 @@ return require('packer').startup(function(use)
      'nvim-treesitter/nvim-treesitter',
      run = ':TSUpdate'
    }
-
-   -- lsp plugins
-    use "williamboman/mason.nvim"
-    use "williamboman/mason-lspconfig.nvim"
-    use "neovim/nvim-lspconfig"
 
    use {
      'nvim-telescope/telescope.nvim', tag = '0.1.0',
