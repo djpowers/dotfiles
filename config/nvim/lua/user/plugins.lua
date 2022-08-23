@@ -63,13 +63,15 @@ return require('packer').startup(function(use)
      requires = { {'nvim-lua/plenary.nvim'} }
    }
 
-   use {
-     'nvim-lualine/lualine.nvim',
-     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
-   }
+   -- Treesitter
    use {
      'nvim-treesitter/nvim-treesitter',
      run = ':TSUpdate'
+   }
+
+   use {
+     'nvim-lualine/lualine.nvim',
+     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
    }
    use {
      'lewis6991/gitsigns.nvim',

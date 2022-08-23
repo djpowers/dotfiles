@@ -5,19 +5,7 @@ require "user.colorscheme"
 require "user.cmp"
 require "user.lsp"
 require "user.telescope"
-
--- Set up treesitter
-require('nvim-treesitter.configs').setup {
-  -- A list of parser names, or "all"
-  ensure_installed = { "lua", "ruby", "typescript" },
-  -- Install parsers synchronously (only applied to `ensure_installed`)
-  sync_install = false,
-  -- Automatically install missing parsers when entering buffer
-  auto_install = true,
-  highlight = {
-    enable = true
-  }
-}
+require "user.treesitter"
 
 -- Set up lualine
 require('lualine').setup()
