@@ -18,21 +18,21 @@ require('nvim_comment').setup()
 
 -- Set up leap
 require('leap').set_default_keymaps()
+
+-- Set up gitlinker
+require"gitlinker".setup()
 --" " Specify a directory for plugins
 --" call plug#begin('~/.vim/plugged')
 --" " Make sure you use single quotes
 --" Plug 'tpope/vim-surround'
 --" Plug 'tpope/vim-repeat'
 --" Plug 'tpope/vim-rails'
---" Plug 'tpope/vim-fugitive'
---" Plug 'tpope/vim-rhubarb'
 --" Plug 'tpope/vim-endwise'
 --" Plug 'ludovicchabant/vim-gutentags'
 --" Plug 'mattn/emmet-vim'
 --" Plug 'dense-analysis/ale'
 --" Plug 'jeffkreeftmeijer/vim-numbertoggle'
 --" Plug 'mcasper/vim-infer-debugger'
---" Plug 'tyru/open-browser.vim'
 --" Plug 'arcticicestudio/nord-vim'
 --" Plug 'suy/vim-context-commentstring'
 --" " Initialize plugin system
@@ -45,9 +45,6 @@ require('leap').set_default_keymaps()
 --" " Hide Netrw banner by default (toggle with `I`); add mapping to open one directory up
 --" let g:netrw_banner = 0
 --" nnoremap - :e %:h<cr>
---" 
---" " Ensure that EditorConfig works well with fugitive
---" let g:EditorConfig_exclude_patterns = ['fugitive://.*']
 --" 
 --" " Spell-check Markdown files and Git Commit Messages
 --" autocmd FileType markdown setlocal spell

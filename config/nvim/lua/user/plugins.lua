@@ -70,6 +70,9 @@ return require('packer').startup(function(use)
    }
    use "nvim-treesitter/playground" -- Treesitter playground integrated into Neovim
 
+   -- Git
+   use 'ruifm/gitlinker.nvim' -- Generate shareable file permalinks for several git hosts
+
    use {
      'nvim-lualine/lualine.nvim',
      requires = { 'kyazdani42/nvim-web-devicons', opt = true }
