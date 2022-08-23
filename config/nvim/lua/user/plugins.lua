@@ -47,7 +47,7 @@ return require('packer').startup(function(use)
    use 'hrsh7th/cmp-nvim-lsp' -- LSP completions
    use 'hrsh7th/cmp-nvim-lua' -- neovim Lua API completions
    use 'onsails/lspkind.nvim' -- vscode-like pictograms for neovim lsp completion items
-
+   use 'David-Kunz/cmp-npm' -- npm package and version completions
    -- snippets
    use "L3MON4D3/LuaSnip" --snippet engine
    use "rafamadriz/friendly-snippets" -- a bunch of snippets to use

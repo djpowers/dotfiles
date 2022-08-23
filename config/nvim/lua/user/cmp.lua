@@ -13,13 +13,20 @@ if not lspkind_status_ok then
   return
 end
 
+local cmp_npm_status_ok, cmp_npm = pcall(require, "cmp-npm")
+if not cmp_npm_status_ok then
+  return
+end
+
+cmp_npm.setup({})
+
 require("luasnip/loaders/from_vscode").lazy_load()
 
 cmp.setup({
   snippet = {
     -- REQUIRED - you must specify a snippet engine
     expand = function(args)
-      require('luasnip').lsp_expand(args.body) -- For `luasnip` users.
+      luasnip.lsp_expand(args.body) -- For `luasnip` users.
     end,
   },
   window = {
@@ -42,6 +49,7 @@ cmp.setup({
         luasnip = "[LuaSnip]",
         buffer = "[Buffer]",
         path = "[Path]",
+        npm = "[NPM]",
       }),
     }),
   },
@@ -51,5 +59,6 @@ cmp.setup({
     { name = 'luasnip' }, -- For luasnip users.
     { name = 'buffer' },
     { name = 'path' },
+    { name = 'npm', keyword_length = 4 },
   })
 })
