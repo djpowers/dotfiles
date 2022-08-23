@@ -8,6 +8,11 @@ if not status_ok then
 	return
 end
 
+local status_ok, lspconfig = pcall(require, "lspconfig")
+if not status_ok then
+  return
+end
+
 -- Set up mason (lsp)
 mason.setup()
 mason_lspconfig.setup()
@@ -30,7 +35,7 @@ capabilities = cmp_nvim_lsp.update_capabilities(capabilities)
 
 mason_lspconfig.setup_handlers {
   function (server_name)
-    require("lspconfig")[server_name].setup {
+    lspconfig[server_name].setup {
       capabilities = capabilities,
     }
   end,
