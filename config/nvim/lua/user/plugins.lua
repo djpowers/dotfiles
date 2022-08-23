@@ -34,10 +34,7 @@ packer.init {
 return require('packer').startup(function(use)
   -- My plugins here
    use 'wbthomason/packer.nvim' -- Have packer manage itself
-   use {
-	"windwp/nvim-autopairs", -- use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
-    config = function() require("nvim-autopairs").setup {} end
-}
+   use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
 
    -- Colorschemes
    use 'shaunsingh/nord.nvim' -- An arctic, north-bluish clean and elegant Vim theme

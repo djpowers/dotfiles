@@ -20,6 +20,7 @@ files="
   config/nvim/lua/user/lsp.lua
   config/nvim/lua/user/telescope.lua
   config/nvim/lua/user/treesitter.lua
+  config/nvim/lua/user/autopairs.lua
   config/starship.toml
   rbenv/default-gems
   nvm/default-packages

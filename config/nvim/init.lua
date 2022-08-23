@@ -6,6 +6,7 @@ require "user.cmp"
 require "user.lsp"
 require "user.telescope"
 require "user.treesitter"
+require "user.autopairs"
 
 -- Set up lualine
 require('lualine').setup()
@@ -24,10 +25,7 @@ require"gitlinker".setup()
 --" " Specify a directory for plugins
 --" call plug#begin('~/.vim/plugged')
 --" " Make sure you use single quotes
---" Plug 'tpope/vim-surround'
---" Plug 'tpope/vim-repeat'
 --" Plug 'tpope/vim-rails'
---" Plug 'tpope/vim-endwise'
 --" Plug 'ludovicchabant/vim-gutentags'
 --" Plug 'mattn/emmet-vim'
 --" Plug 'dense-analysis/ale'
