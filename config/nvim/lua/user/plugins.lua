@@ -59,13 +59,13 @@ return require('packer').startup(function(use)
 
    -- Telescope
    use {
-     'nvim-telescope/telescope.nvim', tag = '0.1.0',
+     'nvim-telescope/telescope.nvim', tag = '0.1.0', -- Find, Filter, Preview, Pick
      requires = { {'nvim-lua/plenary.nvim'} }
    }
 
    -- Treesitter
    use {
-     'nvim-treesitter/nvim-treesitter',
+     'nvim-treesitter/nvim-treesitter', -- Nvim Treesitter configurations and abstraction layer
      run = ':TSUpdate'
    }
 
