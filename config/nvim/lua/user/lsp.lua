@@ -3,14 +3,14 @@ if not status_ok then
 	return
 end
 
-local status_ok, masonLspconfig = pcall(require, "mason-lspconfig")
+local status_ok, mason_lspconfig = pcall(require, "mason-lspconfig")
 if not status_ok then
 	return
 end
 
 -- Set up mason (lsp)
 mason.setup()
-masonLspconfig.setup()
+mason_lspconfig.setup()
 
 -- Mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
@@ -28,7 +28,7 @@ end
 
 capabilities = cmp_nvim_lsp.update_capabilities(capabilities)
 
-masonLspconfig.setup_handlers {
+mason_lspconfig.setup_handlers {
   function (server_name)
     require("lspconfig")[server_name].setup {
       capabilities = capabilities,
