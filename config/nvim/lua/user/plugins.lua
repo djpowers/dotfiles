@@ -57,6 +57,12 @@ return require('packer').startup(function(use)
    use "williamboman/mason.nvim" -- Easily install and manage LSP servers, DAP servers, linters, and formatters
    use "williamboman/mason-lspconfig.nvim" -- makes it easier to use lspconfig with mason.nvim
 
+   -- Telescope
+   use {
+     'nvim-telescope/telescope.nvim', tag = '0.1.0',
+     requires = { {'nvim-lua/plenary.nvim'} }
+   }
+
    use {
      'nvim-lualine/lualine.nvim',
      requires = { 'kyazdani42/nvim-web-devicons', opt = true }
@@ -64,11 +70,6 @@ return require('packer').startup(function(use)
    use {
      'nvim-treesitter/nvim-treesitter',
      run = ':TSUpdate'
-   }
-
-   use {
-     'nvim-telescope/telescope.nvim', tag = '0.1.0',
-     requires = { {'nvim-lua/plenary.nvim'} }
    }
    use {
      'lewis6991/gitsigns.nvim',
