@@ -68,6 +68,7 @@ return require('packer').startup(function(use)
      'nvim-treesitter/nvim-treesitter', -- Nvim Treesitter configurations and abstraction layer
      run = ':TSUpdate'
    }
+   use "nvim-treesitter/playground" -- Treesitter playground integrated into Neovim
 
    use {
      'nvim-lualine/lualine.nvim',
