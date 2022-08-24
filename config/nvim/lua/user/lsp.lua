@@ -98,5 +98,6 @@ mason_tool_installer.setup {
     'rubocop',
     'solargraph',
     'typescript-language-server',
+    'vue-language-server',
   },
 }
