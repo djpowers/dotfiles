@@ -7,15 +7,13 @@ require "user.lsp"
 require "user.telescope"
 require "user.treesitter"
 require "user.autopairs"
+require "user.comment"
 
 -- Set up lualine
 require('lualine').setup()
 
 -- Set up colorizer
 require'colorizer'.setup()
-
--- Set up nvim-comment
-require('nvim_comment').setup()
 
 -- Set up leap
 require('leap').set_default_keymaps()

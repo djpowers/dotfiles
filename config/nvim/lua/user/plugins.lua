@@ -35,6 +35,7 @@ return require('packer').startup(function(use)
   -- My plugins here
    use 'wbthomason/packer.nvim' -- Have packer manage itself
    use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
+   use "numToStr/Comment.nvim" -- Easily comment stuff
 
    -- Colorschemes
    use 'shaunsingh/nord.nvim' -- An arctic, north-bluish clean and elegant Vim theme
@@ -70,6 +71,7 @@ return require('packer').startup(function(use)
      run = ':TSUpdate'
    }
    use "nvim-treesitter/playground" -- Treesitter playground integrated into Neovim
+   use 'JoosepAlviste/nvim-ts-context-commentstring'
 
    -- Git
    use 'ruifm/gitlinker.nvim' -- Generate shareable file permalinks for several git hosts
@@ -124,7 +126,6 @@ return require('packer').startup(function(use)
      end
    }
    use 'norcalli/nvim-colorizer.lua'
-   use 'terrortylor/nvim-comment'
    use 'gpanders/editorconfig.nvim'
    use 'ggandor/leap.nvim'
 
