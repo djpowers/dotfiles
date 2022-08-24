@@ -36,6 +36,11 @@ return require('packer').startup(function(use)
    use 'wbthomason/packer.nvim' -- Have packer manage itself
    use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
    use "numToStr/Comment.nvim" -- Easily comment stuff
+   use "kyazdani42/nvim-web-devicons" -- Add icons
+   use "nvim-lualine/lualine.nvim" -- Fast and configurable statusline
+   use "norcalli/nvim-colorizer.lua" -- Fastest Neovim colorizer
+   use "gpanders/editorconfig.nvim" -- Maintian consistent coding styles
+   use "ggandor/leap.nvim" -- Lightning-fast movements in the visible editor area
 
    -- Colorschemes
    use 'shaunsingh/nord.nvim' -- An arctic, north-bluish clean and elegant Vim theme
@@ -79,14 +84,6 @@ return require('packer').startup(function(use)
    -- Git
    use "lewis6991/gitsigns.nvim"
    use 'ruifm/gitlinker.nvim' -- Generate shareable file permalinks for several git hosts
-
-   use {
-     'nvim-lualine/lualine.nvim',
-     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
-   }
-   use 'norcalli/nvim-colorizer.lua'
-   use 'gpanders/editorconfig.nvim'
-   use 'ggandor/leap.nvim'
 
    -- Automatically set up your configuration after cloning packer.nvim
    -- Put this at the end after all plugins
