@@ -82,7 +82,8 @@ return require('packer').startup(function(use)
      run = ':TSUpdate'
    }
    use "nvim-treesitter/playground" -- Treesitter playground integrated into Neovim
-   use 'JoosepAlviste/nvim-ts-context-commentstring'
+   use 'JoosepAlviste/nvim-ts-context-commentstring' -- Set commentstring based on cursor location in a file
+   use  "windwp/nvim-ts-autotag" -- Use treesitter to auto close and auto rename html tag
 
    -- Git
    use "lewis6991/gitsigns.nvim"
