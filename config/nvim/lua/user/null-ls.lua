@@ -14,7 +14,9 @@ null_ls.setup {
   debug = false,
   sources = {
     formatting.prettier,
+    formatting.rubocop,
     diagnostics.eslint_d,
+    diagnostics.rubocop,
   },
   -- you can reuse a shared lspconfig on_attach callback here
   on_attach = function(client, bufnr)
