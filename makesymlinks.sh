@@ -22,6 +22,7 @@ files="
   config/nvim/lua/user/treesitter.lua
   config/nvim/lua/user/autopairs.lua
   config/nvim/lua/user/comment.lua
+  config/nvim/lua/user/gitsigns.lua
   config/starship.toml
   rbenv/default-gems
   nvm/default-packages
