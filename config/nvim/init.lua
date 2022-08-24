@@ -11,18 +11,7 @@ require "user.comment"
 require "user.gitsigns"
 require "user.null-ls"
 require "user.autocommands"
-
--- Set up lualine
-require('lualine').setup()
-
--- Set up colorizer
-require'colorizer'.setup()
-
--- Set up leap
-require('leap').set_default_keymaps()
-
--- Set up gitlinker
-require"gitlinker".setup()
+require "user.plugin-setups"
 --" " Specify a directory for plugins
 --" call plug#begin('~/.vim/plugged')
 --" " Make sure you use single quotes
