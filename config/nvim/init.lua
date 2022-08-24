@@ -9,6 +9,7 @@ require "user.treesitter"
 require "user.autopairs"
 require "user.comment"
 require "user.gitsigns"
+require "user.null-ls"
 
 -- Set up lualine
 require('lualine').setup()

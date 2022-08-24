@@ -59,6 +59,7 @@ return require('packer').startup(function(use)
    use "williamboman/mason.nvim" -- Easily install and manage LSP servers, DAP servers, linters, and formatters
    use "williamboman/mason-lspconfig.nvim" -- makes it easier to use lspconfig with mason.nvim
    use "WhoIsSethDaniel/mason-tool-installer.nvim" -- Install and upgrade third party tools automatically
+   use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters
 
    -- Telescope
    use {
