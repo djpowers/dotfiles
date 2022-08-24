@@ -26,7 +26,6 @@ null_ls.setup {
         group = augroup,
         buffer = bufnr,
         callback = function()
-          -- vim.lsp.buf.format({ bufnr = bufnr })
           vim.lsp.buf.formatting({ bufnr = bufnr })
         end,
       })

@@ -48,8 +48,8 @@ local on_attach = function(client, bufnr)
   vim.keymap.set('n', 'gr', vim.lsp.buf.references, bufopts)
   vim.keymap.set('n', '<space>f',function() vim.lsp.buf.format { async = true } end, bufopts)
 
-  -- Do not use typescript language server for formatting
-  if client.name == "tsserver" then
+  -- TODO: switch to recommended approach
+  if client.name ~= "null-ls" then
     client.resolved_capabilities.document_formatting = false
   end
 end
