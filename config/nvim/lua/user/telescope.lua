@@ -3,3 +3,18 @@ vim.api.nvim_set_keymap('n', '<leader>ff', [[<cmd>lua require('telescope.builtin
 vim.api.nvim_set_keymap('n', '<leader>fg', [[<cmd>lua require('telescope.builtin').live_grep()<CR>]], { noremap = true })
 vim.api.nvim_set_keymap('n', '<leader>fb', [[<cmd>lua require('telescope.builtin').buffers()<CR>]], { noremap = true })
 vim.api.nvim_set_keymap('n', '<leader>fh', [[<cmd>lua require('telescope.builtin').help_tags()<CR>]], { noremap = true })
+
+-- To get telescope-file-browser loaded and working with telescope,
+-- you need to call load_extension, somewhere after setup function:
+local status_ok, telescope = pcall(require, "telescope")
+if not status_ok then
+  return
+end
+telescope.load_extension "file_browser"
+
+vim.api.nvim_set_keymap(
+  "n",
+  "<leader>fb",
+  [[<cmd>lua require "telescope".extensions.file_browser.file_browser()<CR>]],
+  { noremap = true }
+)
