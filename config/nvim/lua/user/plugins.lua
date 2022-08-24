@@ -42,6 +42,9 @@ return require('packer').startup(function(use)
    use "gpanders/editorconfig.nvim" -- Maintian consistent coding styles
    use "ggandor/leap.nvim" -- Lightning-fast movements in the visible editor area
 
+   -- Rails (Vimscript)
+   use "tpope/vim-rails" -- Ruby on Rails power tools
+
    -- Colorschemes
    use 'shaunsingh/nord.nvim' -- An arctic, north-bluish clean and elegant Vim theme
 

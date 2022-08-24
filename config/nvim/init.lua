@@ -15,7 +15,6 @@ require "user.plugin-setups"
 --" " Specify a directory for plugins
 --" call plug#begin('~/.vim/plugged')
 --" " Make sure you use single quotes
---" Plug 'tpope/vim-rails'
 --" Plug 'dense-analysis/ale'
 --" " Initialize plugin system
 --" call plug#end()
