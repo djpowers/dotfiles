@@ -13,3 +13,8 @@ vim.api.nvim_create_autocmd("FileType", {
   pattern = { "gitcommit", "gitrebase" },
   command = "setlocal complete+=kspell",
 })
+
+-- Disable automatic comment insertion
+vim.api.nvim_create_autocmd("BufEnter", {
+  callback = function() vim.opt.formatoptions = vim.opt.formatoptions - { "c","r","o" } end,
+})
