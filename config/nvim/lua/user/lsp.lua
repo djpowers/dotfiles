@@ -25,7 +25,7 @@ vim.keymap.set('n', ']d', vim.diagnostic.goto_next, opts)
 
 -- Use an on_attach function to only map the following keys
 -- after the language server attaches to the current buffer
-local on_attach = function(_, bufnr)
+local on_attach = function(client, bufnr)
   -- Enable completion triggered by <c-x><c-o>
   vim.api.nvim_buf_set_option(bufnr, 'omnifunc', 'v:lua.vim.lsp.omnifunc')
 
@@ -47,6 +47,11 @@ local on_attach = function(_, bufnr)
   vim.keymap.set('n', '<space>ca', vim.lsp.buf.code_action, bufopts)
   vim.keymap.set('n', 'gr', vim.lsp.buf.references, bufopts)
   vim.keymap.set('n', '<space>f',function() vim.lsp.buf.format { async = true } end, bufopts)
+
+  -- Do not use typescript language server for formatting
+  if client.name == "tsserver" then
+    client.resolved_capabilities.document_formatting = false
+  end
 end
 
 -- Completion
