@@ -77,3 +77,21 @@ lspconfig.sumneko_lua.setup {
     }
   }
 }
+
+local mason_tool_installer_status_ok, mason_tool_installer = pcall(require, "mason-tool-installer")
+if not mason_tool_installer_status_ok then
+  return
+end
+mason_tool_installer.setup {
+
+  -- a list of all tools you want to ensure are installed upon
+  -- start; they should be the names Mason uses for each tool
+  ensure_installed = {
+    'eslint_d',
+    'lua-language-server',
+    'prettier',
+    'rubocop',
+    'solargraph',
+    'typescript-language-server',
+  },
+}

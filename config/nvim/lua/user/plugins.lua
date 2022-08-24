@@ -58,6 +58,7 @@ return require('packer').startup(function(use)
    use "neovim/nvim-lspconfig" -- Quickstart configs for Nvim LSP
    use "williamboman/mason.nvim" -- Easily install and manage LSP servers, DAP servers, linters, and formatters
    use "williamboman/mason-lspconfig.nvim" -- makes it easier to use lspconfig with mason.nvim
+   use "WhoIsSethDaniel/mason-tool-installer.nvim" -- Install and upgrade third party tools automatically
 
    -- Telescope
    use {
