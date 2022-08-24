@@ -10,6 +10,7 @@ require "user.autopairs"
 require "user.comment"
 require "user.gitsigns"
 require "user.null-ls"
+require "user.autocommands"
 
 -- Set up lualine
 require('lualine').setup()
@@ -29,14 +30,6 @@ require"gitlinker".setup()
 --" Plug 'dense-analysis/ale'
 --" " Initialize plugin system
 --" call plug#end()
---" 
---" " Spell-check Markdown files and Git Commit Messages
---" autocmd FileType markdown setlocal spell
---" autocmd FileType gitcommit setlocal spell
---" 
---" " Enable dictionary auto-completion in Markdown files and Git Commit Messages
---" autocmd FileType markdown setlocal complete+=kspell
---" autocmd FileType gitcommit setlocal complete+=kspell
 --" 
 --" " Set ALE fixers
 --" let g:ale_fixers = {
