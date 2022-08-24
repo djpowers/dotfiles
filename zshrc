@@ -1,8 +1,9 @@
 export CLICOLOR=1
 
-export VISUAL=vim
+export VISUAL=nvim
 export EDITOR="$VISUAL"
 
+alias vim='nvim'
 alias ll='ls -al'
 
 eval "$(starship init zsh)"
