@@ -31,7 +31,6 @@ require"gitlinker".setup()
 --" Plug 'jeffkreeftmeijer/vim-numbertoggle'
 --" Plug 'mcasper/vim-infer-debugger'
 --" Plug 'arcticicestudio/nord-vim'
---" Plug 'suy/vim-context-commentstring'
 --" " Initialize plugin system
 --" call plug#end()
 --" 
