@@ -4,6 +4,8 @@ if not status_ok then
 end
 
 comment.setup {
+  -- ignores empty lines
+  ignore = '^$',
   pre_hook = function(ctx)
     local U = require "Comment.utils"
 
