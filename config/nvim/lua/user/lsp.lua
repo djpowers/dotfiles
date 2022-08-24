@@ -97,6 +97,7 @@ mason_tool_installer.setup {
     'prettier',
     'rubocop',
     'solargraph',
+    'stylelint-lsp',
     'typescript-language-server',
     'vue-language-server',
   },
