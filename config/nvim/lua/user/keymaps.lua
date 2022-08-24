@@ -22,10 +22,6 @@ keymap("n", "<leader>e", ":Lex 30<cr>", opts)
 -- Source neovim config
 keymap("n", "<leader>sv", ":luafile $MYVIMRC<cr>", opts)
 
--- Insert --
--- Press jk fast to enter
-keymap("i", "jk", "<ESC>", opts)
-
 -- Visual --
 -- Stay in indent mode
 keymap("v", "<", "<gv", opts)
