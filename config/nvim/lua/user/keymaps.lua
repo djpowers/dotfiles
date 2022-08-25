@@ -18,7 +18,18 @@ vim.g.maplocalleader = " "
 
 -- Normal --
 -- Source neovim config
-keymap("n", "<leader>sv", ":luafile $MYVIMRC<cr>", opts)
+function _G.ReloadConfig()
+  for name,_ in pairs(package.loaded) do
+    if name:match('^user') then
+      package.loaded[name] = nil
+    end
+  end
+
+  dofile(vim.env.MYVIMRC)
+end
+
+vim.api.nvim_set_keymap('n', '<Leader>sv', '<Cmd>lua ReloadConfig()<CR>', opts)
+vim.cmd('command! ReloadConfig lua ReloadConfig()')
 
 -- Visual --
 -- Stay in indent mode
