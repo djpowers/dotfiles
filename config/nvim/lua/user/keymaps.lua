@@ -17,8 +17,6 @@ vim.g.maplocalleader = " "
 --   command_mode = "c",
 
 -- Normal --
--- Open filer explorer
-keymap("n", "<leader>e", ":Lex 30<cr>", opts)
 -- Source neovim config
 keymap("n", "<leader>sv", ":luafile $MYVIMRC<cr>", opts)
 
