@@ -56,6 +56,15 @@ local on_attach = function(client, bufnr)
   end
 end
 
+vim.diagnostic.config({
+  virtual_text = {
+    source = "if_many",
+  },
+  float = {
+    source = "always",
+  },
+})
+
 -- Completion
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 
