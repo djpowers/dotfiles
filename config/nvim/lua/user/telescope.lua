@@ -7,6 +7,9 @@ vim.api.nvim_set_keymap('n', '<leader>fh', [[<cmd>lua require('telescope.builtin
 -- Search for string under cursor (find word)
 vim.api.nvim_set_keymap('n', '<leader>fw', [[<cmd>lua require('telescope.builtin').grep_string()<CR>]], { noremap = true })
 
+-- Open the previous picker (find resume)
+vim.api.nvim_set_keymap('n', '<leader>fr', [[<cmd>lua require('telescope.builtin').resume()<CR>]], { noremap = true })
+
 -- To get telescope-file-browser loaded and working with telescope,
 -- you need to call load_extension, somewhere after setup function:
 local status_ok, telescope = pcall(require, "telescope")
