@@ -109,6 +109,7 @@ mason_tool_installer.setup {
     'rubocop',
     'solargraph',
     'stylelint-lsp',
+    'stylua',
     'typescript-language-server',
     'vue-language-server',
   },
