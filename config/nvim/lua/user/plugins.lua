@@ -89,6 +89,14 @@ return require('packer').startup(function(use)
    use "lewis6991/gitsigns.nvim"
    use 'ruifm/gitlinker.nvim' -- Generate shareable file permalinks for several git hosts
 
+   -- Which Key
+   use {
+     "folke/which-key.nvim", -- Display a popup with possible keybindings of the command you started typing
+     config = function()
+       require("which-key").setup {}
+     end
+   }
+
    -- Automatically set up your configuration after cloning packer.nvim
    -- Put this at the end after all plugins
    if Packer_bootstrap then
