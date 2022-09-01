@@ -18,3 +18,9 @@ vim.api.nvim_create_autocmd("FileType", {
 vim.api.nvim_create_autocmd("BufEnter", {
   callback = function() vim.opt.formatoptions = vim.opt.formatoptions - { "c","r","o" } end,
 })
+
+-- Set Jb files to use Ruby FileType
+vim.api.nvim_create_autocmd(
+  { "BufRead", "BufNewFile" },
+  { pattern = { "*.jb" }, command = "setlocal filetype=ruby" }
+)
