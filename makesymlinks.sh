@@ -25,6 +25,7 @@ files="
   config/nvim/lua/user/gitsigns.lua
   config/nvim/lua/user/null-ls.lua
   config/nvim/lua/user/autocommands.lua
+  config/nvim/lua/user/lualine.lua
   config/nvim/lua/user/plugin-setups.lua
   config/starship.toml
   rbenv/default-gems

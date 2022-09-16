@@ -42,7 +42,8 @@ return require('packer').startup(function(use)
   use "gpanders/editorconfig.nvim" -- Maintian consistent coding styles
   use "ggandor/leap.nvim" -- Lightning-fast movements in the visible editor area
 
-  -- Rails (Vimscript)
+  -- tpope plugins (Vimscript)
+  use "tpope/vim-unimpaired" -- Pairs of handy bracket mappings
   use "tpope/vim-rails" -- Ruby on Rails power tools
 
   -- Colorschemes
