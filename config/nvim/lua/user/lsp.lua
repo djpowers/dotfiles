@@ -61,14 +61,12 @@ vim.diagnostic.config({
 })
 
 -- Completion
-local capabilities = vim.lsp.protocol.make_client_capabilities()
-
 local cmp_nvim_lsp_status_ok, cmp_nvim_lsp = pcall(require, "cmp_nvim_lsp")
 if not cmp_nvim_lsp_status_ok then
   return
 end
 
-capabilities = cmp_nvim_lsp.update_capabilities(capabilities)
+local capabilities = cmp_nvim_lsp.default_capabilities()
 
 mason_lspconfig.setup_handlers {
   function (server_name)
