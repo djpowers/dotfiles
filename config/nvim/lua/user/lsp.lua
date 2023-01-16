@@ -105,6 +105,7 @@ mason_tool_installer.setup {
     'solargraph',
     'stylelint-lsp',
     'stylua',
+    'tailwindcss-language-server',
     'typescript-language-server',
     'vue-language-server',
   },
