@@ -28,6 +28,7 @@ files="
   config/nvim/lua/user/lualine.lua
   config/nvim/lua/user/vim-rails.lua
   config/nvim/lua/user/plugin-setups.lua
+  config/nvim/lua/user/colorizer.lua
   config/starship.toml
   rbenv/default-gems
   nvm/default-packages
