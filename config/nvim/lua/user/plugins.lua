@@ -63,6 +63,7 @@ return require('packer').startup(function(use)
   -- snippets
   use "L3MON4D3/LuaSnip" --snippet engine
   use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
+  use "roobert/tailwindcss-colorizer-cmp.nvim" -- add vscode-style TailwindCSS completion
 
   -- LSP
   use "neovim/nvim-lspconfig" -- Quickstart configs for Nvim LSP
