@@ -28,5 +28,5 @@
           --format='format:' \
           \"$@\" | \
           awk 'NF{a[$0]++}END{for(i in a){print a[i], i}}' | \
-          sort -rn; \
+          sort -n; \
           };f"
