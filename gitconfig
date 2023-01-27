@@ -19,3 +19,14 @@
   sw = switch
   log-tree = log --graph --pretty=format:\"%C(auto)%h %d %s %Cblue<%an> %C(magenta)(%ar)\" --abbrev-commit
   clean-tags = !git tag -l | xargs git tag -d && git fetch --tags
+  churn = !"f() { \
+          git log \
+          --all \
+          --find-copies \
+          --find-renames \
+          --name-only \
+          --format='format:' \
+          \"$@\" | \
+          awk 'NF{a[$0]++}END{for(i in a){print a[i], i}}' | \
+          sort -rn; \
+          };f"
