@@ -29,6 +29,9 @@ tailwindcss_colorizer_cmp.setup({color_square_width = 2})
 
 require("luasnip/loaders/from_vscode").lazy_load()
 
+-- enable framework-specific snippets from Friendly Snippets
+luasnip.filetype_extend("ruby", {"rails"})
+
 cmp.setup({
   snippet = {
     -- REQUIRED - you must specify a snippet engine
