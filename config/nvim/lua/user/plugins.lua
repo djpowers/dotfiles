@@ -47,6 +47,15 @@ return require('packer').startup(function(use)
   use "tpope/vim-unimpaired" -- Pairs of handy bracket mappings
   use "tpope/vim-rails" -- Ruby on Rails power tools
 
+  -- startup
+  use {
+    'goolord/alpha-nvim',
+    requires = { 'nvim-tree/nvim-web-devicons' },
+    config = function ()
+      require'alpha'.setup(require'alpha.themes.theta'.config)
+    end
+  }
+
   -- Colorschemes
   use 'shaunsingh/nord.nvim' -- An arctic, north-bluish clean and elegant Vim theme
 
