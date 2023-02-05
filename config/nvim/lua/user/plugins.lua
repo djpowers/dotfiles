@@ -97,6 +97,16 @@ return require('packer').startup(function(use)
   use 'JoosepAlviste/nvim-ts-context-commentstring' -- Set commentstring based on cursor location in a file
   use  "windwp/nvim-ts-autotag" -- Use treesitter to auto close and auto rename html tag
 
+  -- Neotest
+  use {
+    "nvim-neotest/neotest",
+    requires = {
+      "nvim-lua/plenary.nvim",
+      "nvim-treesitter/nvim-treesitter",
+      "antoinemadec/FixCursorHold.nvim"
+    }
+  }
+
   -- Git
   use "lewis6991/gitsigns.nvim"
   use 'ruifm/gitlinker.nvim' -- Generate shareable file permalinks for several git hosts
