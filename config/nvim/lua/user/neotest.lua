@@ -19,6 +19,8 @@
 vim.api.nvim_set_keymap('n', 'tn', [[<cmd>lua require("neotest").run.run()<CR>]], { noremap = true })
 -- Run the current file
 vim.api.nvim_set_keymap('n', 'tf', [[<cmd>lua require("neotest").run.run(vim.fn.expand("%"))<CR>]], { noremap = true })
+-- Run full suite (all)
+vim.api.nvim_set_keymap('n', 'ta', [[<cmd>lua require('neotest').run.run(vim.fn.getcwd())<CR>]], { noremap = true })
 -- Re-run the last position
 vim.api.nvim_set_keymap('n', 'tl', [[<cmd>lua require("neotest").run.run_last()<CR>]], { noremap = true })
 -- Open the output of a test result
