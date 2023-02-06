@@ -14,3 +14,7 @@
       neotest_rspec
     }
   })
+
+-- Jump to previous/next test failure (adapted from :h neotest.jump)
+vim.api.nvim_set_keymap('n', '[n', [[<cmd>lua require("neotest").jump.prev({ status = "failed" })<CR>]], { noremap = true })
+vim.api.nvim_set_keymap('n', ']n', [[<cmd>lua require("neotest").jump.next({ status = "failed" })<CR>]], { noremap = true })
