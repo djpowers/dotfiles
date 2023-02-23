@@ -77,7 +77,7 @@ mason_lspconfig.setup_handlers {
   end,
 }
 
-lspconfig.sumneko_lua.setup {
+lspconfig.lua_ls.setup {
   on_attach = on_attach,
   capabilities = capabilities,
   settings = {
