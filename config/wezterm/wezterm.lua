@@ -1,6 +1,17 @@
 local wezterm = require 'wezterm'
 local act = wezterm.action
 
+local SPACER = string.rep(' ', 20)
+
+wezterm.on(
+  'format-tab-title',
+  function(tab)
+    return {
+      { Text = SPACER .. tab.active_pane.title .. SPACER .. '⌘' .. tab.tab_index + 1 },
+    }
+  end
+)
+
 return {
   color_scheme = 'nord',
   font = wezterm.font 'JetBrains Mono',
