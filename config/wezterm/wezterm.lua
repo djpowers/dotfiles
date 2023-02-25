@@ -2,6 +2,8 @@ local wezterm = require 'wezterm'
 local act = wezterm.action
 
 local SPACER = string.rep(' ', 20)
+local COLOR_SCHEME_NAME = 'nord'
+local color_scheme = wezterm.color.get_builtin_schemes()[COLOR_SCHEME_NAME]
 
 wezterm.on(
   'format-tab-title',
@@ -13,11 +15,46 @@ wezterm.on(
 )
 
 return {
-  color_scheme = 'nord',
+  color_scheme = COLOR_SCHEME_NAME,
   font = wezterm.font 'JetBrains Mono',
   font_size = 13,
   line_height = 1.2,
   window_decorations = "RESIZE",
+  window_frame = {
+    -- The size of the font in the tab bar.
+    font_size = 13,
+    -- The overall background color of the tab bar when
+    -- the window is focused
+    active_titlebar_bg = color_scheme.background,
+
+    -- The overall background color of the tab bar when
+    -- the window is not focused
+    inactive_titlebar_bg = color_scheme.foreground,
+  },
+  colors = {
+    tab_bar = {
+      active_tab = {
+        bg_color = color_scheme.selection_fg,
+        fg_color = color_scheme.selection_bg,
+      },
+      inactive_tab = {
+        bg_color = color_scheme.background,
+        fg_color = color_scheme.foreground,
+      },
+       inactive_tab_hover = {
+        bg_color = color_scheme.selection_bg,
+        fg_color = color_scheme.selection_fg,
+      },
+      new_tab = {
+        bg_color = color_scheme.background,
+        fg_color = color_scheme.foreground,
+      },
+      new_tab_hover = {
+        bg_color = color_scheme.selection_bg,
+        fg_color = color_scheme.selection_fg,
+      },
+    },
+  },
   keys = {
     -- Closes the current pane. If that was the last pane in the tab, closes the tab.
     {
