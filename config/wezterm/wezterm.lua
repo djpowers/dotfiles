@@ -16,6 +16,7 @@ wezterm.on(
 
 return {
   color_scheme = COLOR_SCHEME_NAME,
+  enable_scroll_bar = true,
   font = wezterm.font 'JetBrains Mono',
   font_size = 13,
   line_height = 1.2,
@@ -32,6 +33,7 @@ return {
     inactive_titlebar_bg = color_scheme.foreground,
   },
   colors = {
+    scrollbar_thumb = color_scheme.selection_fg,
     tab_bar = {
       active_tab = {
         bg_color = color_scheme.selection_fg,
