@@ -25,5 +25,16 @@ return {
       mods = 'OPT',
       action = act.SendKey { key = 'f', mods = 'ALT' },
     },
+    -- Rebind SUPER-Left, SUPER-Right as CTRL-a, CTRL-b respectively to match macOS behavior, going to beginning or end of line
+    {
+      key = 'LeftArrow',
+      mods = 'CMD',
+      action = act.SendKey { key = 'a', mods = 'CTRL' },
+    },
+    {
+      key = 'RightArrow',
+      mods = 'CMD',
+      action = act.SendKey { key = 'e', mods = 'CTRL' },
+    },
   },
 }
