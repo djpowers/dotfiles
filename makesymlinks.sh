@@ -31,6 +31,7 @@ files="
   config/nvim/lua/user/colorizer.lua
   config/nvim/lua/user/neotest.lua
   config/starship.toml
+  config/wezterm/wezterm.lua
   rbenv/default-gems
   nvm/default-packages
   ctags
