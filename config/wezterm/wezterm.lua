@@ -36,5 +36,11 @@ return {
       mods = 'CMD',
       action = act.SendKey { key = 'e', mods = 'CTRL' },
     },
+    -- Rebind CMD-Backspace as CTRL-u to delete from cursor to start of line
+    {
+      key = 'Backspace',
+      mods = 'CMD',
+      action = act.SendKey { key = 'u', mods = 'CTRL' },
+    },
   },
 }
