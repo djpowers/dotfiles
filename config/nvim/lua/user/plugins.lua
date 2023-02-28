@@ -42,9 +42,10 @@ return require('packer').startup(function(use)
   use "NvChad/nvim-colorizer.lua" -- Maintained fork of the fastest Neovim colorizer
   use "gpanders/editorconfig.nvim" -- Maintian consistent coding styles
   use "ggandor/leap.nvim" -- Lightning-fast movements in the visible editor area
+  use "echasnovski/mini.bracketed" -- Go forward/backward with square brackets
 
   -- tpope plugins (Vimscript)
-  use "tpope/vim-unimpaired" -- Pairs of handy bracket mappings
+  -- use "tpope/vim-unimpaired" -- Pairs of handy bracket mappings
   use "tpope/vim-rails" -- Ruby on Rails power tools
 
   -- startup
