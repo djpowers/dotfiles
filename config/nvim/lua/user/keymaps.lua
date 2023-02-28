@@ -31,10 +31,6 @@ end
 vim.api.nvim_set_keymap('n', '<Leader>sv', '<Cmd>lua ReloadConfig()<CR>', opts)
 vim.cmd('command! ReloadConfig lua ReloadConfig()')
 
--- Move up and down by physical lines if using a count, otherwise by visible lines
-vim.api.nvim_set_keymap("n", "j", "v:count ? 'j' : 'gj'", { noremap = true, expr = true })
-vim.api.nvim_set_keymap("n", "k", "v:count ? 'k' : 'gk'", { noremap = true, expr = true })
-
 -- Visual --
 -- Stay in indent mode
 keymap("v", "<", "<gv", opts)

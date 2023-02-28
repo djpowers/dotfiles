@@ -2,4 +2,3 @@
 require('fidget').setup()
 require('leap').set_default_keymaps()
 require"gitlinker".setup()
-require('mini.bracketed').setup()
