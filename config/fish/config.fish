@@ -8,6 +8,9 @@ if status is-interactive
   # set variables
   set -gx EDITOR nvim
 
+  # load nvm default packages
+  set nvm_default_packages (head ~/.nvm/default-packages)
+
   # auto-switch node version via nvm.fish
   function __nvm_auto --on-variable PWD
     nvm use --silent 2>/dev/null
