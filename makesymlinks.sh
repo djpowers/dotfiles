@@ -35,6 +35,7 @@ files="
   config/nvim/lua/user/mini-nvim.lua
   config/starship.toml
   rbenv/default-gems
+  node-version
   nvm/default-packages
   ctags
   gitconfig
