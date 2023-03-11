@@ -7,6 +7,7 @@ if status is-interactive
 
   # set variables
   set -gx EDITOR nvim
+  set -gx BAT_THEME Nord
 
   # customize fzf.fish key bindings
   fzf_configure_bindings --directory=\ct --history=\ch
