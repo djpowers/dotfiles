@@ -8,6 +8,9 @@ if status is-interactive
   # set variables
   set -gx EDITOR nvim
 
+  # customize fzf.fish key bindings
+  fzf_configure_bindings --directory=\ct --history=\ch
+
   # load nvm default packages
   set nvm_default_packages (head ~/.nvm/default-packages)
 
