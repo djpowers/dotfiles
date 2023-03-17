@@ -22,4 +22,12 @@ if status is-interactive
   __nvm_auto
 
   starship init fish | source
+
+  # set up tidelift infrastructure
+  function tl
+    set infra_path ~/tidelift/infra/tidelift.sh
+    if test -f $infra_path
+      bass source $infra_path \; tl $argv
+    end
+  end
 end
