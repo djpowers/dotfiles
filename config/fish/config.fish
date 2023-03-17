@@ -21,6 +21,7 @@ if status is-interactive
   end
   __nvm_auto
 
+  # initialize prompt
   starship init fish | source
 
   # set up tidelift infrastructure
