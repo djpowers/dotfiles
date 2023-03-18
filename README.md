@@ -27,6 +27,19 @@ Install [Node.js](https://nodejs.org/en/):
 nvm install --lts
 ```
 
+Set `fish` as default shell:
+
+```shell
+sudo bash -c 'echo $(which fish) >> /etc/shells'
+chsh -s $(which fish)
+```
+
+Install Fisher plugins:
+
+```shell
+fisher update
+```
+
 ### References
 
 - [Using Git and GitHub to Manage Your Dotfiles](http://blog.smalleycreative.com/tutorials/using-git-and-github-to-manage-your-dotfiles/)
