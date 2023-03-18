@@ -11,6 +11,8 @@ olddir=~/dotfiles_old             # old dotfiles backup directory
 
 # list of files/folders to symlink in homedir
 files="
+  config/fish/config.fish
+  config/fish/fish_plugins
   config/nvim/init.lua
   config/nvim/lua/user/options.lua
   config/nvim/lua/user/keymaps.lua
@@ -33,6 +35,7 @@ files="
   config/nvim/lua/user/mini-nvim.lua
   config/starship.toml
   rbenv/default-gems
+  node-version
   nvm/default-packages
   ctags
   gitconfig
