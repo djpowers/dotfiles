@@ -9,6 +9,9 @@ if status is-interactive
   set -gx EDITOR nvim
   set -gx BAT_THEME Nord
 
+  # map Ctrl-z to bring last suspended job to foreground
+  bind \cz "fg 2>/dev/null; commandline -f repaint"
+
   # customize fzf.fish key bindings
   fzf_configure_bindings --directory=\ct --history=\ch
 
