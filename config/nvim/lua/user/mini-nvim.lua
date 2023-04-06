@@ -15,4 +15,7 @@ require('mini.basics').setup({
     relnum_in_visual_mode = false,
   }
 })
+-- Delete "Correct latest misspelled word" keymap in normal mode, as it overwrites the "suspend" feature
+vim.keymap.del('n', '<C-z>')
+
 require('mini.bracketed').setup()
