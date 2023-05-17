@@ -26,6 +26,7 @@ brew "postgresql", restart_service: true
 brew "rbenv"
 brew "redis", restart_service: true
 brew "ripgrep"
+brew "shellcheck"
 brew "spotify-tui"
 brew "starship"
 brew "telnet"

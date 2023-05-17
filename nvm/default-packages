@@ -1,5 +1,6 @@
 @volar/shared
 @volar/vue-language-server
+bash-language-server
 bulldohzer
 localtunnel
 npkill
