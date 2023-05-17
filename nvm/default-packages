@@ -4,4 +4,5 @@ bulldohzer
 localtunnel
 npkill
 typescript
+typescript-language-server
 vscode-languageserver-types
