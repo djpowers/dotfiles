@@ -1,3 +1,7 @@
+@volar/shared
+@volar/vue-language-server
 bulldohzer
 localtunnel
 npkill
+typescript
+vscode-languageserver-types

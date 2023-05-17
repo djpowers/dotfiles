@@ -3,3 +3,15 @@ name = "ruby"
 config = { solargraph = { diagnostics = true, formatting = false } }
 formatter = { command = "bundle", args = ["exec", "rubocop", "--stdin", "foo.rb", "-a", "--stderr", "--fail-level", "fatal"] }
 auto-format = true
+
+[[language]]
+name = "vue"
+auto-format = true
+file-types = ["vue"]
+injection-regex = "vue"
+language-server = { command = "vue-language-server", args = ["--stdio"] }
+roots = ["package.json"]
+scope = "text.html.vue"
+
+[language.config.typescript]
+tsdk = "/opt/homebrew/lib/node_modules/typescript/lib"
