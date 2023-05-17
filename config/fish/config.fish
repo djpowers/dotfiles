@@ -20,7 +20,11 @@ if status is-interactive
 
   # auto-switch node version via nvm.fish
   function __nvm_auto --on-variable PWD
-    nvm use --silent 2>/dev/null
+    if nvm use --silent 2>/dev/null
+      # nvm found compatibile version
+    else
+      nvm use # rerun to display error message
+    end
   end
   __nvm_auto
 
