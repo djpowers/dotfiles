@@ -5,4 +5,5 @@ localtunnel
 npkill
 typescript
 typescript-language-server
+vscode-langservers-extracted
 vscode-languageserver-types
