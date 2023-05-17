@@ -19,6 +19,7 @@ brew "glow"
 brew "graphviz"
 brew "jq"
 brew "k9s"
+brew "marksman"
 brew "neofetch"
 brew "ocrmypdf"
 brew "postgresql", restart_service: true
