@@ -13,6 +13,7 @@ olddir=~/dotfiles_old             # old dotfiles backup directory
 files="
   config/fish/config.fish
   config/fish/fish_plugins
+  config/helix/languages.toml
   config/nvim/init.lua
   config/nvim/lua/user/options.lua
   config/nvim/lua/user/keymaps.lua
