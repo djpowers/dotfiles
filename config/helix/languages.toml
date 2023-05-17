@@ -15,3 +15,9 @@ scope = "text.html.vue"
 
 [language.config.typescript]
 tsdk = "/opt/homebrew/lib/node_modules/typescript/lib"
+
+[[language]]
+name = "yaml"
+
+[language.config.yaml]
+keyOrdering = false
