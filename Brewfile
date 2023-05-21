@@ -24,6 +24,7 @@ brew "node"
 brew "ocrmypdf"
 brew "postgresql", restart_service: true
 brew "rbenv"
+brew "rbenv-default-gems"
 brew "redis", restart_service: true
 brew "ripgrep"
 brew "shellcheck"
