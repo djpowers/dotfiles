@@ -14,7 +14,7 @@ roots = ["package.json"]
 scope = "text.html.vue"
 
 [language.config.typescript]
-tsdk = "/opt/homebrew/lib/node_modules/typescript/lib"
+tsdk = "/opt/homebrew/opt/typescript/libexec/lib/node_modules/typescript/lib"
 
 [[language]]
 name = "yaml"
