@@ -1,4 +1,9 @@
 [[language]]
+name = "fish"
+formatter = { command = "fish_indent" }
+auto-format = true
+
+[[language]]
 name = "ruby"
 config = { solargraph = { diagnostics = true, formatting = false } }
 formatter = { command = "bundle", args = ["exec", "rubocop", "--stdin", "foo.rb", "-a", "--stderr", "--fail-level", "fatal"] }
