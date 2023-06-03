@@ -17,6 +17,9 @@ if status is-interactive
     # customize fzf.fish key bindings
     fzf_configure_bindings --directory=\ct --history=\ch
 
+    # set default source for fzf; respect gitignore
+    set -gx FZF_DEFAULT_COMMAND 'fd --type f --strip-cwd-prefix --hidden --follow --exclude .git'
+
     # load nvm default packages
     set nvm_default_packages (head ~/.nvm/default-packages)
 

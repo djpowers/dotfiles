@@ -9,10 +9,6 @@ alias ll='ls -al'
 eval "$(starship init zsh)"
 eval "$(rbenv init -)"
 
-# initialize fzf and configure to use ripgrep
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-export FZF_DEFAULT_COMMAND='rg --files --follow --hidden'
-
 # allow you to select in a menu
 zstyle ':completion:*' menu select
 zmodload zsh/complist
