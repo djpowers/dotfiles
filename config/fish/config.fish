@@ -1,6 +1,7 @@
 if status is-interactive
     # ensure homebrew is in path
     fish_add_path /opt/homebrew/bin
+    fish_add_path /opt/homebrew/sbin
 
     # use the default theme
     fish_config theme choose "fish default"
