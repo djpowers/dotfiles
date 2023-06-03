@@ -6,7 +6,7 @@ if status is-interactive
     fish_config theme choose "fish default"
 
     # set variables
-    set -gx EDITOR nvim
+    set -gx EDITOR hx
     set -gx BAT_THEME Nord
     set -gx LS_COLORS (vivid generate nord)
 
