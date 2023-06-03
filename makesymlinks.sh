@@ -41,7 +41,6 @@ files="
   gitconfig
   gitignore_global
   vimrc
-  zshrc
 "
 
 ##########
