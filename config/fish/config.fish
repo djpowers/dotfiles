@@ -8,6 +8,7 @@ if status is-interactive
     # set variables
     set -gx EDITOR nvim
     set -gx BAT_THEME Nord
+    set -gx LS_COLORS (vivid generate nord)
 
     # map Ctrl-z to bring last suspended job to foreground
     bind \cz "fg 2>/dev/null; commandline -f repaint"
