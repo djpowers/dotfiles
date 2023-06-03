@@ -38,7 +38,6 @@ files="
   rbenv/default-gems
   node-version
   nvm/default-packages
-  ctags
   gitconfig
   gitignore_global
   vimrc
