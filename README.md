@@ -42,6 +42,12 @@ fisher update
 ```
 ## Other notes
 
+### 🧬 Ensure the [Helix Editor](https://helix-editor.com/) language servers are properly configured
+
+```shell
+hx --health
+```
+
 ### 🚀 Prompt is generated from [Starship](https://starship.rs/)
 
 ```shell
