@@ -19,7 +19,6 @@ brew "jq"
 brew "k9s"
 brew "marksman"
 brew "neofetch"
-brew "neovim"
 brew "node"
 brew "ocrmypdf"
 brew "postgresql", restart_service: true
