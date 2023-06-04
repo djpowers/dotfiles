@@ -17,6 +17,9 @@ if status is-interactive
     # customize fzf.fish key bindings
     fzf_configure_bindings --directory=\ct --history=\ch
 
+    # limit fzf.fish to files only; include hidden files, but not .git
+    set fzf_fd_opts --type f --hidden --exclude=.git
+
     # set default source for fzf; respect gitignore
     set -gx FZF_DEFAULT_COMMAND 'fd --type f --strip-cwd-prefix --hidden --follow --exclude .git'
 
