@@ -29,7 +29,7 @@ brew "redis", restart_service: true
 brew "ripgrep"
 brew "shellcheck"
 brew "solargraph"
-brew "spotify-tui"
+brew "spotify_player"
 brew "starship"
 brew "stow"
 brew "telnet"
