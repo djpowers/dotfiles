@@ -1,45 +1,65 @@
 # djpowers' dotfiles
 
-Clone repo and navigate to directory:
+## Setup instructions
+
+### 👯 Clone repo and navigate to directory
 
 ```shell
 git clone https://github.com/djpowers/dotfiles
 cd ~/dotfiles
 ```
 
-Make the script to create symlinks executable, and run it:
-
-```shell
-chmod +x makesymlinks.sh
-./makesymlinks.sh
-```
-
-Install [Homebrew](https://brew.sh/) and run the `bundle` command to install packages:
+### 🍺 Install [Homebrew](https://brew.sh/) and run the `bundle` command to install packages
 
 ```shell
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew bundle
 ```
 
-Install [Node.js](https://nodejs.org/en/):
+### 🐐 Create the package symlinks via [GNU Stow](https://www.gnu.org/software/stow/)
+
+```
+stow --verbose */
+````
+
+### 🔰 Install [Node.js](https://nodejs.org/en/)
 
 ```shell
 nvm install --lts
 ```
 
-Set `fish` as default shell:
+### 🐟 Set [fish](https://fishshell.com/) as default shell
 
 ```shell
 sudo bash -c 'echo $(which fish) >> /etc/shells'
 chsh -s $(which fish)
 ```
 
-Install Fisher plugins:
+### 🎣 Install Fisher plugins
 
 ```shell
 fisher update
 ```
+## Other notes
 
-### References
+### 🧬 Ensure the [Helix Editor](https://helix-editor.com/) language servers are properly configured
 
-- [Using Git and GitHub to Manage Your Dotfiles](http://blog.smalleycreative.com/tutorials/using-git-and-github-to-manage-your-dotfiles/)
+```shell
+hx --health
+```
+
+### 🚀 Prompt is generated from [Starship](https://starship.rs/)
+
+```shell
+starship --version
+```
+
+### 💎 Install latest [Ruby](https://www.ruby-lang.org/en/) as needed
+
+```shell
+rbenv install $(rbenv install -l | grep -v - | tail -1)
+```
+
+## Previous Versions
+
+- Latest Neovim-based commit: [`88371ba8ed`](https://github.com/djpowers/dotfiles/tree/88371ba8ed6f9671d5dc1a8d243032b0a41916c3)
