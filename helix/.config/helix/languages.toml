@@ -27,3 +27,7 @@ name = "yaml"
 
 [language.config.yaml]
 keyOrdering = false
+
+[[language]]
+name = "json"
+formatter = { command = 'npx', args = ["prettier", "--parser", "json"] }
