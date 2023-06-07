@@ -39,3 +39,18 @@ formatter = { command = 'npx', args = ["prettier", "--parser", "json"] }
 [[language]]
 name = "css"
 formatter = { command = 'npx', args = ["prettier", "--parser", "css"] }
+
+[[language]]
+name = "javascript"
+formatter = { command = 'npx', args = ["prettier", "--parser", "typescript"] }
+auto-format = true
+
+[[language]]
+name = "typescript"
+formatter = { command = 'npx', args = ["prettier", "--parser", "typescript"] }
+auto-format = true
+
+[[language]]
+name = "tsx"
+formatter = { command = 'npx', args = ["prettier", "--parser", "typescript"] }
+auto-format = true
