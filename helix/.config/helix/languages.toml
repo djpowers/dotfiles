@@ -29,5 +29,9 @@ name = "yaml"
 keyOrdering = false
 
 [[language]]
+name = "html"
+formatter = { command = 'npx', args = ["prettier", "--parser", "html"] }
+
+[[language]]
 name = "json"
 formatter = { command = 'npx', args = ["prettier", "--parser", "json"] }
