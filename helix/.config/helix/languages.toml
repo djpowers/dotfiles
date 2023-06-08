@@ -27,3 +27,32 @@ name = "yaml"
 
 [language.config.yaml]
 keyOrdering = false
+
+[[language]]
+name = "html"
+formatter = { command = 'npx', args = ["prettier", "--parser", "html"] }
+
+[[language]]
+name = "json"
+config = { "json" = { "validate" = { "enable" = true } } }
+formatter = { command = 'npx', args = ["prettier", "--parser", "json"] }
+
+[[language]]
+name = "css"
+config = { "css" = { validate = { enable = true } } }
+formatter = { command = 'npx', args = ["prettier", "--parser", "css"] }
+
+[[language]]
+name = "javascript"
+formatter = { command = 'npx', args = ["prettier", "--parser", "typescript"] }
+auto-format = true
+
+[[language]]
+name = "typescript"
+formatter = { command = 'npx', args = ["prettier", "--parser", "typescript"] }
+auto-format = true
+
+[[language]]
+name = "tsx"
+formatter = { command = 'npx', args = ["prettier", "--parser", "typescript"] }
+auto-format = true
