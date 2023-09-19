@@ -3,3 +3,6 @@ hidden = false
 
 [editor.soft-wrap]
 enable = true
+
+[keys.insert]
+"C-[" = "normal_mode"
