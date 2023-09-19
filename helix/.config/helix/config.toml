@@ -15,3 +15,6 @@ enable = true
 
 [keys.insert]
 "C-[" = "normal_mode"
+
+[keys.select]
+"C-[" = "normal_mode"
