@@ -1,2 +1,2 @@
-@volar/vue-language-server
+@vue/language-server@1.7.8
 svelte-language-server
