@@ -29,12 +29,6 @@ formatter = { command = "npx", args = ["prettier", "--parser", "vue"]}
 tsdk = "/opt/homebrew/opt/typescript/libexec/lib/node_modules/typescript/lib"
 
 [[language]]
-name = "yaml"
-
-[language.config.yaml]
-keyOrdering = false
-
-[[language]]
 name = "html"
 formatter = { command = 'npx', args = ["prettier", "--parser", "html"] }
 
