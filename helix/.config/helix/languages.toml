@@ -15,18 +15,22 @@ language-servers = [
   "solargraph",
 ]
 
+[language-server.vue-language-server]
+command = "vue-language-server"
+args = ["--stdio"]
+
+[language-server.vue-language-server.config]
+typescript = { tsdk = "/opt/homebrew/opt/typescript/libexec/lib/node_modules/typescript/lib" }
+
 [[language]]
 name = "vue"
-auto-format = true
+scope = "source.vue"
 file-types = ["vue"]
 injection-regex = "vue"
-language-server = { command = "vue-language-server", args = ["--stdio"] }
 roots = ["package.json"]
-scope = "text.html.vue"
-formatter = { command = "npx", args = ["prettier", "--parser", "vue"]}
-
-[language.config.typescript]
-tsdk = "/opt/homebrew/opt/typescript/libexec/lib/node_modules/typescript/lib"
+language-servers = ["vue-language-server"]
+formatter = { command = "npx", args = ["prettier", "--parser", "vue"] }
+auto-format = true
 
 [[language]]
 name = "html"
