@@ -40,12 +40,10 @@ formatter = { command = 'npx', args = ["prettier", "--parser", "html"] }
 
 [[language]]
 name = "json"
-config = { "json" = { "validate" = { "enable" = true } } }
 formatter = { command = 'npx', args = ["prettier", "--parser", "json"] }
 
 [[language]]
 name = "css"
-config = { "css" = { validate = { enable = true } } }
 formatter = { command = 'npx', args = ["prettier", "--parser", "css"] }
 
 [[language]]
