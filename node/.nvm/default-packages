@@ -1,2 +1,3 @@
 @vue/language-server@1.7.8
+create-vite
 svelte-language-server
