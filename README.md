@@ -65,6 +65,12 @@ rbenv install $(rbenv install -l | grep -v - | tail -1)
 ```shell
 pyenv install $(string trim $(pyenv install -l | grep -v - | grep -v a | tail -1))
 ```
+#### Create and Activate Virtual Environment
+
+```shel
+pyenv virtualenv project_env
+pyenv activate project_env
+```
 
 ## Previous Versions
 
