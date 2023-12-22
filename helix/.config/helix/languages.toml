@@ -35,6 +35,7 @@ auto-format = true
 [[language]]
 name = "html"
 formatter = { command = 'npx', args = ["prettier", "--parser", "html"] }
+language-servers = [ "vscode-html-language-server", "tailwindcss-ls" ]
 
 [[language]]
 name = "json"
@@ -43,6 +44,7 @@ formatter = { command = 'npx', args = ["prettier", "--parser", "json"] }
 [[language]]
 name = "css"
 formatter = { command = 'npx', args = ["prettier", "--parser", "css"] }
+language-servers = [ "vscode-css-language-server", "tailwindcss-ls" ]
 
 [[language]]
 name = "javascript"
@@ -55,6 +57,11 @@ formatter = { command = 'npx', args = ["prettier", "--parser", "typescript"] }
 auto-format = true
 
 [[language]]
+name = "jsx"
+language-servers = [ "typescript-language-server", "tailwindcss-ls" ]
+
+[[language]]
 name = "tsx"
 formatter = { command = 'npx', args = ["prettier", "--parser", "typescript"] }
 auto-format = true
+language-servers = [ "typescript-language-server", "tailwindcss-ls" ]
