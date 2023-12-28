@@ -72,6 +72,34 @@ pyenv virtualenv project_env
 pyenv activate project_env
 ```
 
+### 🤖 Configure artificial intelligence tooling
+
+Configure AI tools as needed.
+
+#### 🦙 Add [Olamma models](https://ollama.ai/library)
+
+```shell
+ollama pull llama2
+ollama pull codellama
+```
+
+#### 💬 Configure [AIChat](https://github.com/sigoden/aichat#config)
+
+```shell
+aichat # will guide through configuration on first launch
+```
+
+```yaml
+model: ollama
+clients:
+- type: ollama
+  api_base: http://localhost:11434
+  api_key: null
+  models:
+  - name: codellama
+    max_tokens: null
+```
+
 ## Previous Versions
 
 - Latest Neovim-based commit: [`88371ba8ed`](https://github.com/djpowers/dotfiles/tree/88371ba8ed6f9671d5dc1a8d243032b0a41916c3)
