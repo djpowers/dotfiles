@@ -31,3 +31,9 @@ L = [
   ":sh echo 'Generating step by step explanation...'",
   ":sh cat /tmp/helix-ai | aichat 'Explain the following code block step by step.'"
 ]
+"A-\\" = [
+  "extend_line",
+  ":insert-output echo 'FILL_THIS'",
+  "extend_line_below",
+  ":pipe aichat 'Using this comment, fill the line having the comment FILL_THIS.'",
+]
