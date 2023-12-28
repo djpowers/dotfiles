@@ -20,7 +20,7 @@ brew bundle
 
 ```
 stow --verbose */
-````
+```
 
 ### 🔰 Install [Node.js](https://nodejs.org/en/)
 
