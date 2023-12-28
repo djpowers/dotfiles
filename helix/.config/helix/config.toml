@@ -28,6 +28,6 @@ G = [
 ]
 L = [
   ":pipe-to cat > /tmp/helix-ai",
-  ":sh echo 'Generating line by line explanation...'",
-  ":sh cat /tmp/helix-ai | aichat 'Explain this code line by line.'"
+  ":sh echo 'Generating step by step explanation...'",
+  ":sh cat /tmp/helix-ai | aichat 'Explain the following code block step by step.'"
 ]
