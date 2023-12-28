@@ -18,3 +18,7 @@ enable = true
 
 [keys.select]
 "C-[" = "normal_mode"
+
+[keys.normal]
+A-x = "extend_to_line_bounds"
+X = ["extend_line_up", "extend_to_line_bounds"]
