@@ -22,3 +22,12 @@ enable = true
 [keys.normal]
 A-x = "extend_to_line_bounds"
 X = ["extend_line_up", "extend_to_line_bounds"]
+G = [
+  ":pipe-to cat > /tmp/helix-ai",
+  ":pipe cat /tmp/helix-ai | aichat 'Improve this code. Do not provide explanations.'"
+]
+L = [
+  ":pipe-to cat > /tmp/helix-ai",
+  ":sh echo 'Generating line by line explanation...'",
+  ":sh cat /tmp/helix-ai | aichat 'Explain this code line by line.'"
+]
