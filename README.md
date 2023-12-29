@@ -20,7 +20,7 @@ brew bundle
 
 ```
 stow --verbose */
-````
+```
 
 ### 🔰 Install [Node.js](https://nodejs.org/en/)
 
@@ -70,6 +70,34 @@ pyenv install $(string trim $(pyenv install -l | grep -v - | grep -v a | tail -1
 ```shel
 pyenv virtualenv project_env
 pyenv activate project_env
+```
+
+### 🤖 Configure artificial intelligence tooling
+
+Configure AI tools as needed.
+
+#### 🦙 Add [Olamma models](https://ollama.ai/library)
+
+```shell
+ollama pull llama2
+ollama pull codellama
+```
+
+#### 💬 Configure [AIChat](https://github.com/sigoden/aichat#config)
+
+```shell
+aichat # will guide through configuration on first launch
+```
+
+```yaml
+model: ollama
+clients:
+- type: ollama
+  api_base: http://localhost:11434
+  api_key: null
+  models:
+  - name: codellama
+    max_tokens: null
 ```
 
 ## Previous Versions
