@@ -29,8 +29,8 @@ C-e = [
 ]
 C-i = [
   ":pipe-to cat > /tmp/helix-ai",
-  ":pipe cat /tmp/helix-ai | aichat 'Improve this code. Do not provide explanations.'",
-  ":sh echo 'Code improvement complete!'"
+  ":sh echo 'Generating code improvement...'",
+  ":sh cat /tmp/helix-ai | aichat 'Improve this code.'",
 ]
 "A-\\" = [
   "extend_line",
