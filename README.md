@@ -22,6 +22,13 @@ brew bundle
 stow --verbose */
 ```
 
+### 🖥️  Import iTerm2 key bindings
+iTerm2 > Settings > Keys > Key Bindings > Presets... > Import... (Keep existing mappings)
+```shell
+~/dotfiles/iterm/key_bindings
+```
+- allows scrolling one page up and down with <kbd>⌃</kbd><kbd>⌥</kbd><kbd>⌘</kbd><kbd>j</kbd> and <kbd>⌃</kbd><kbd>⌥</kbd><kbd>⌘</kbd><kbd>k</kbd>, respectively
+
 ### 🔰 Install [Node.js](https://nodejs.org/en/)
 
 ```shell
