@@ -39,6 +39,11 @@ if status is-interactive
     end
     __nvm_auto
 
+    # loop through installed Ollama models and pull latest
+    function update_ollama_models
+        ollama list | awk 'NR>1 {print $1}' | xargs -I {} sh -c 'echo "Updating model: {}"; ollama pull {}; echo "--"' && echo "All models updated."
+    end
+
     # initialize prompt
     starship init fish | source
 end
