@@ -9,3 +9,7 @@ font-thicken = true
 
 # keymaps
 keybind = global:ctrl+grave_accent=toggle_quick_terminal
+
+# https://github.com/ghostty-org/ghostty/discussions/3232
+# https://github.com/ghostty-org/ghostty/issues/3646
+keybind = cmd+backspace=text:\x15
