@@ -1,2 +1,11 @@
+# NOTE:
+# docs:
+# ghostty +show-config --default
+# examples:
+# https://github.com/search?q=path%3Aghostty%2Fconfig&type=code
+
+# ghostty +list-fonts
 font-thicken = true
+
+# keymaps
 keybind = global:ctrl+grave_accent=toggle_quick_terminal
