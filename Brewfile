@@ -33,7 +33,6 @@ brew "rbenv-default-gems"
 brew "redis", restart_service: true
 brew "ripgrep"
 brew "shellcheck"
-brew "solargraph"
 brew "spotify_player"
 brew "starship"
 brew "stow"

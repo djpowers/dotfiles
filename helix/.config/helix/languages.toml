@@ -3,17 +3,14 @@ name = "fish"
 formatter = { command = "fish_indent" }
 auto-format = true
 
-[language-server.rubocop]
-command = "bundle"
-args = ["exec", "rubocop", "--lsp"]
+[language-server.ruby-lsp]
+command = "ruby-lsp"
+config = { diagnostics = true, formatting = true }
 
 [[language]]
 name = "ruby"
+language-servers = ["ruby-lsp"]
 auto-format = true
-language-servers = [
-  { name = "rubocop" },
-  "solargraph",
-]
 
 [language-server.vue-language-server]
 command = "vue-language-server"
