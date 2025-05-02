@@ -87,17 +87,17 @@ ollama pull codellama
 
 ```shell
 aichat # will guide through configuration on first launch
+aichat --info | grep config_file # find existing config
 ```
 
 ```yaml
-model: ollama
+model: ollama:codellama:latest
 clients:
-- type: ollama
-  api_base: http://localhost:11434
-  api_key: null
+- type: openai-compatible
+  name: ollama
+  api_base: http://localhost:11434/v1
   models:
-  - name: codellama
-    max_tokens: null
+  - name: codellama:latest
 ```
 
 ## Previous Versions
