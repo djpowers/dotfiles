@@ -100,6 +100,13 @@ clients:
   - name: codellama:latest
 ```
 
+### 🍐 Configure [Aider](https://aider.chat/)
+
+```shell
+aider # will guide through configuration on first launch
+aider --list-models free # list models containing "free"
+```
+
 ## Previous Versions
 
 - Latest Neovim-based commit: [`88371ba8ed`](https://github.com/djpowers/dotfiles/tree/88371ba8ed6f9671d5dc1a8d243032b0a41916c3)
