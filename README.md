@@ -105,6 +105,9 @@ clients:
 ```shell
 aider # will guide through configuration on first launch
 aider --list-models free # list models containing "free"
+
+# TODO: remove this line once no longer necessary
+cp aider/.config/config.yaml ~/.aider.conf.yml
 ```
 
 ## Previous Versions
