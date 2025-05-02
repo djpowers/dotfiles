@@ -67,7 +67,7 @@ pyenv install $(string trim $(pyenv install -l | grep -v - | grep -v a | tail -1
 ```
 #### Create and Activate Virtual Environment
 
-```shel
+```shell
 pyenv virtualenv project_env
 pyenv activate project_env
 ```
@@ -87,17 +87,27 @@ ollama pull codellama
 
 ```shell
 aichat # will guide through configuration on first launch
+aichat --info | grep config_file # find existing config
 ```
 
 ```yaml
-model: ollama
+model: ollama:codellama:latest
 clients:
-- type: ollama
-  api_base: http://localhost:11434
-  api_key: null
+- type: openai-compatible
+  name: ollama
+  api_base: http://localhost:11434/v1
   models:
-  - name: codellama
-    max_tokens: null
+  - name: codellama:latest
+```
+
+### 🍐 Configure [Aider](https://aider.chat/)
+
+```shell
+aider # enter OpenRouter API key; will store in ~/.aider/oauth-keys.env
+aider --list-models free # list models containing "free"
+
+# TODO: remove this line once no longer necessary (Aider-AI/aider#216)
+cp aider/.config/config.yaml ~/.aider.conf.yml
 ```
 
 ## Previous Versions

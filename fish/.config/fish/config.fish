@@ -44,6 +44,9 @@ if status is-interactive
         ollama list | awk 'NR>1 {print $1}' | xargs -I {} sh -c 'echo "Updating model: {}"; ollama pull {}; echo "--"' && echo "All models updated."
     end
 
+    # set Ollama server for use with Aider
+    set -gx OLLAMA_API_BASE 'http://127.0.0.1:11434'
+
     # initialize prompt
     starship init fish | source
 end
