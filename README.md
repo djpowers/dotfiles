@@ -103,10 +103,10 @@ clients:
 ### 🍐 Configure [Aider](https://aider.chat/)
 
 ```shell
-aider # will guide through configuration on first launch
+aider # enter OpenRouter API key; will store in ~/.aider/oauth-keys.env
 aider --list-models free # list models containing "free"
 
-# TODO: remove this line once no longer necessary
+# TODO: remove this line once no longer necessary (Aider-AI/aider#216)
 cp aider/.config/config.yaml ~/.aider.conf.yml
 ```
 
