@@ -67,7 +67,7 @@ pyenv install $(string trim $(pyenv install -l | grep -v - | grep -v a | tail -1
 ```
 #### Create and Activate Virtual Environment
 
-```shel
+```shell
 pyenv virtualenv project_env
 pyenv activate project_env
 ```
