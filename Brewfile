@@ -27,8 +27,6 @@ brew "ocrmypdf"
 brew "ollama"
 brew "postgresql", restart_service: true
 brew "prettier"
-brew "rbenv"
-brew "rbenv-default-gems"
 brew "redis", restart_service: true
 brew "ripgrep"
 brew "shellcheck"
