@@ -26,19 +26,6 @@ if status is-interactive
     # set default source for fzf; respect gitignore
     set -gx FZF_DEFAULT_COMMAND 'fd --type f --strip-cwd-prefix --hidden --follow --exclude .git'
 
-    # load nvm default packages
-    set nvm_default_packages (head ~/.nvm/default-packages)
-
-    # auto-switch node version via nvm.fish
-    function __nvm_auto --on-variable PWD
-        if nvm use --silent 2>/dev/null
-            # nvm found compatibile version
-        else
-            nvm use # rerun to display error message
-        end
-    end
-    __nvm_auto
-
     # loop through installed Ollama models and pull latest
     function update_ollama_models
         ollama list | awk 'NR>1 {print $1}' | xargs -I {} sh -c 'echo "Updating model: {}"; ollama pull {}; echo "--"' && echo "All models updated."
