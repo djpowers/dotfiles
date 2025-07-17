@@ -60,11 +60,6 @@ starship --version
 rbenv install $(rbenv install -l | grep -v - | tail -1)
 ```
 
-### 🐍 Install latest [Python](https://www.python.org/) as needed
-
-```shell
-pyenv install $(string trim $(pyenv install -l | grep -v - | grep -v a | tail -1))
-```
 #### Create and Activate Virtual Environment
 
 ```shell
