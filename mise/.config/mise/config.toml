@@ -1,6 +1,8 @@
 [tools]
 # global tool versions go here
 # you can set these with `mise use -g`
+erlang = 'latest'
+elixir = 'latest'
 node = 'lts'
 ruby = 'latest'
 

@@ -22,10 +22,13 @@ brew bundle
 stow --verbose */
 ```
 
-### 🔰 Install [Node.js](https://nodejs.org/en/)
+### 🛠️ Install tools
+- 🔰[Node.js](https://nodejs.org/en/)
+- 💎[Ruby](https://www.ruby-lang.org/en/)
+- 🔮[Elixir](https://elixir-lang.org/)
 
 ```shell
-nvm install --lts
+mise use -g
 ```
 
 ### 🐟 Set [fish](https://fishshell.com/) as default shell
@@ -52,12 +55,6 @@ hx --health
 
 ```shell
 starship --version
-```
-
-### 💎 Install latest [Ruby](https://www.ruby-lang.org/en/) as needed
-
-```shell
-rbenv install $(rbenv install -l | grep -v - | tail -1)
 ```
 
 #### Create and Activate Virtual Environment
