@@ -23,13 +23,9 @@ stow --verbose */
 ```
 
 ### 🛠️ Install tools
-- 🔰[Node.js](https://nodejs.org/en/)
-- 💎[Ruby](https://www.ruby-lang.org/en/)
-- 🔮[Elixir](https://elixir-lang.org/)
-
-```shell
-mise use -g
-```
+- 🔰[Node.js](https://nodejs.org/en/): `mise use -g node`
+- 💎[Ruby](https://www.ruby-lang.org/en/): `mise use -g ruby`
+- 🔮[Elixir](https://elixir-lang.org/): `mise use -g erlang elixir`
 
 ### 🐟 Set [fish](https://fishshell.com/) as default shell
 
