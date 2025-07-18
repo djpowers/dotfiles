@@ -12,21 +12,8 @@ name = "ruby"
 language-servers = ["ruby-lsp"]
 auto-format = true
 
-[language-server.vue-language-server]
-command = "vue-language-server"
-args = ["--stdio"]
-
-[language-server.vue-language-server.config]
-typescript = { tsdk = "/opt/homebrew/opt/typescript/libexec/lib/node_modules/typescript/lib" }
-
 [[language]]
-name = "vue"
-scope = "source.vue"
-file-types = ["vue"]
-injection-regex = "vue"
-roots = ["package.json"]
-language-servers = ["vue-language-server"]
-formatter = { command = "npx", args = ["prettier", "--parser", "vue"] }
+name = "elixir"
 auto-format = true
 
 [[language]]
