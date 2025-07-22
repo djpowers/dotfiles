@@ -21,6 +21,17 @@ brew bundle
 ```
 stow --verbose */
 ```
+### 💼 Work (optional)
+
+Configure git config to use different name/email.
+
+Edit this configuration in `~/.gitconfig-work`:
+```shell
+[user]
+  name = WORK_NAME
+  email = WORK_EMAIL
+```
+Ensure relevant repositories are stored under `~/work/`.
 
 ### 🛠️ Install tools
 - 🔰[Node.js](https://nodejs.org/en/): `mise use -g node`
