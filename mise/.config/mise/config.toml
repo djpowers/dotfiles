@@ -11,4 +11,4 @@ ruby = 'latest'
 # for example, .nvmrc in the case of node's nvm
 idiomatic_version_file_enable_tools = ['node', 'ruby']
 
-env_file = '.env' # load env vars from a dotenv file, see `MISE_ENV_FILE`
+env_file = '.envrc' # load env vars from a direnv file, see `MISE_ENV_FILE`
