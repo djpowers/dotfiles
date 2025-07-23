@@ -38,6 +38,7 @@ Running `mise install` will install the following:
 - 🔰[Node.js](https://nodejs.org/en/)
 - 💎[Ruby](https://www.ruby-lang.org/en/)
 - 🔮[Elixir](https://elixir-lang.org/)
+Run `mise install ruby` to install just that tool.
 
 ### 🐟 Set [fish](https://fishshell.com/) as default shell
 
