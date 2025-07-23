@@ -21,11 +21,24 @@ brew bundle
 ```
 stow --verbose */
 ```
+### 💼 Work (optional)
+
+Configure git config to use different name/email.
+
+Edit this configuration in `~/.gitconfig-work`:
+```shell
+[user]
+  name = WORK_NAME
+  email = WORK_EMAIL
+```
+Ensure relevant repositories are stored under `~/work/`.
 
 ### 🛠️ Install tools
-- 🔰[Node.js](https://nodejs.org/en/): `mise use -g node`
-- 💎[Ruby](https://www.ruby-lang.org/en/): `mise use -g ruby`
-- 🔮[Elixir](https://elixir-lang.org/): `mise use -g erlang elixir`
+Running `mise install` will install the following:
+- 🔰[Node.js](https://nodejs.org/en/)
+- 💎[Ruby](https://www.ruby-lang.org/en/)
+- 🔮[Elixir](https://elixir-lang.org/)
+Run `mise install ruby` to install just that tool.
 
 ### 🐟 Set [fish](https://fishshell.com/) as default shell
 
