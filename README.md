@@ -33,6 +33,12 @@ Edit this configuration in `~/.gitconfig-work`:
 ```
 Ensure relevant repositories are stored under `~/work/`.
 
+Enable git hooks to enforce conventional commits:
+```shell
+cp ~/.githooks/commit-msg.sample ~/.githooks/commit-msg
+chmod +x .githooks/commit-msg # make executable
+```
+
 ### 🛠️ Install tools
 Running `mise install` will install the following:
 - 🔰[Node.js](https://nodejs.org/en/)

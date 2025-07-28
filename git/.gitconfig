@@ -5,6 +5,7 @@
   path = ~/.gitconfig-work
 [core]
   excludesfile = ~/.gitignore_global
+  hooksPath = ~/.githooks/
 [init]
   defaultBranch = main
 [url "ssh://git@github.com/"]
