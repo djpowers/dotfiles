@@ -1,8 +1,5 @@
 #!/bin/sh
-commit_msg=$(cat "$1")
-pattern="^(feat|fix|docs|style|refactor|test|chore)\: .+$"
-
-if ! echo "$commit_msg" | grep -qE "$pattern"; then
-  echo "Invalid commit message. Use Conventional Commits (e.g., 'feat: add login button')"
-  exit 1
+if type cog &> /dev/null; then
+  set -e
+  cog verify --file $1
 fi
