@@ -1,0 +1,5 @@
+#!/bin/sh
+if type cog &> /dev/null; then
+  set -e
+  cog verify --file $1
+fi
