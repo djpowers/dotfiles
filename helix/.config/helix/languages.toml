@@ -16,6 +16,14 @@ auto-format = true
 name = "elixir"
 auto-format = true
 
+[language-server.tailwindcss-ls]
+config.tailwindCSS.includeLanguages = { "heex" = "html" }
+
+[[language]]
+name = "heex"
+language-servers = [ "elixir-ls", "tailwindcss-ls", "vscode-html-language-server" ]
+auto-format = true
+
 [[language]]
 name = "html"
 formatter = { command = 'npx', args = ["prettier", "--parser", "html"] }
