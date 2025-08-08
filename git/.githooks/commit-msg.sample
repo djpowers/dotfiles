@@ -1,5 +1,7 @@
 #!/bin/sh
 if type cog &> /dev/null; then
   set -e
-  cog verify --file $1
+  cog verify --file $1 \
+    --ignore-merge-commits \
+    --ignore-fixup-commits
 fi
