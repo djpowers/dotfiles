@@ -20,8 +20,8 @@ enable = true
 "C-[" = "normal_mode"
 
 [keys.normal]
-# Print the current line's git blame information to the statusline.
-space.B = ":echo %sh{git blame -L %{cursor_line},+1 %{buffer_name}}"
+# Print the current line's git blame information with relative date and commit message to the statusline.
+space.B = ":echo %sh{git show --no-patch --format='%%h (%%an: %%ar): %%s' $(git blame -p %{buffer_name} -L%{cursor_line},+1 | head -1 | cut -d' ' -f1)}"
 
 A-x = "extend_to_line_bounds"
 X = ["extend_line_up", "extend_to_line_bounds"]
