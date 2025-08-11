@@ -20,8 +20,12 @@ enable = true
 "C-[" = "normal_mode"
 
 [keys.normal]
+# Print the current line's git blame information to the statusline.
+space.B = ":echo %sh{git blame -L %{cursor_line},+1 %{buffer_name}}"
+
 A-x = "extend_to_line_bounds"
 X = ["extend_line_up", "extend_to_line_bounds"]
+
 C-e = [
   ":pipe-to cat > /tmp/helix-ai",
   ":sh echo 'Generating step by step explanation...'",
