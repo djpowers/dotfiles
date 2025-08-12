@@ -47,13 +47,14 @@ auto-format = true
 name = "typescript"
 formatter = { command = 'npx', args = ["prettier", "--parser", "typescript"] }
 auto-format = true
+language-servers = [ "typescript-language-server", "vscode-eslint-language-server" ]
 
 [[language]]
 name = "jsx"
-language-servers = [ "typescript-language-server", "tailwindcss-ls" ]
+language-servers = [ "typescript-language-server", "vscode-eslint-language-server", "tailwindcss-ls" ]
 
 [[language]]
 name = "tsx"
 formatter = { command = 'npx', args = ["prettier", "--parser", "typescript"] }
 auto-format = true
-language-servers = [ "typescript-language-server", "tailwindcss-ls" ]
+language-servers = [ "typescript-language-server", "vscode-eslint-language-server", "tailwindcss-ls" ]
