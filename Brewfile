@@ -45,7 +45,6 @@ brew "tree"
 brew "typescript"
 brew "typescript-language-server"
 brew "vivid"
-brew "vscode-langservers-extracted" # pin to 4.8.0 for eslint helix
 brew "yaml-language-server"
 brew "yarn"
 brew "yt-dlp"
