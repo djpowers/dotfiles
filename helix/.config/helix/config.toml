@@ -45,3 +45,5 @@ C-m = [
 B = ":echo %sh{git show --no-patch --format='%%h (%%an: %%ar): %%s' $(git blame -p %{buffer_name} -L%{cursor_line},+1 | head -1 | cut -d' ' -f1)}"
 # Open the curret line in browser via GitHub CLI, defaulting to last commit.
 o = ":sh gh browse -c %{buffer_name}:%{cursor_line}"
+# Easier shortcut to reflow or wrap text
+l = ":reflow"
