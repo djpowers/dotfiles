@@ -20,11 +20,6 @@ enable = true
 "C-[" = "normal_mode"
 
 [keys.normal]
-# Print the current line's git blame information with relative date and commit message to the statusline.
-space.B = ":echo %sh{git show --no-patch --format='%%h (%%an: %%ar): %%s' $(git blame -p %{buffer_name} -L%{cursor_line},+1 | head -1 | cut -d' ' -f1)}"
-# Open the curret line in browser via GitHub CLI, defaulting to last commit.
-space.o = ":sh gh browse -c %{buffer_name}:%{cursor_line}"
-
 A-x = "extend_to_line_bounds"
 X = ["extend_line_up", "extend_to_line_bounds"]
 
@@ -44,3 +39,9 @@ C-m = [
   "extend_line_below",
   ":pipe aichat 'Using this comment, fill the line having the comment FILL_THIS.'",
 ]
+
+[keys.normal.space]
+# Print the current line's git blame information with relative date and commit message to the statusline.
+B = ":echo %sh{git show --no-patch --format='%%h (%%an: %%ar): %%s' $(git blame -p %{buffer_name} -L%{cursor_line},+1 | head -1 | cut -d' ' -f1)}"
+# Open the curret line in browser via GitHub CLI, defaulting to last commit.
+o = ":sh gh browse -c %{buffer_name}:%{cursor_line}"
