@@ -1,5 +1,4 @@
 tap "github/gh"
-brew "aichat"
 brew "aider"
 brew "bash-language-server"
 brew "bat"

@@ -23,23 +23,6 @@ enable = true
 A-x = "extend_to_line_bounds"
 X = ["extend_line_up", "extend_to_line_bounds"]
 
-C-e = [
-  ":pipe-to cat > /tmp/helix-ai",
-  ":sh echo 'Generating step by step explanation...'",
-  ":sh cat /tmp/helix-ai | aichat 'Explain the following code block step by step.'",
-]
-C-m = [
-  ":pipe-to cat > /tmp/helix-ai",
-  ":sh echo 'Generating code improvement...'",
-  ":sh cat /tmp/helix-ai | aichat 'Improve this code.'",
-]
-"A-\\" = [
-  "extend_line",
-  ":insert-output echo 'FILL_THIS'",
-  "extend_line_below",
-  ":pipe aichat 'Using this comment, fill the line having the comment FILL_THIS.'",
-]
-
 [keys.normal.space]
 # Print the current line's git blame information with relative date and commit message to the statusline.
 B = ":echo %sh{git show --no-patch --format='%%h (%%an: %%ar): %%s' $(git blame -p %{buffer_name} -L%{cursor_line},+1 | head -1 | cut -d' ' -f1)}"
