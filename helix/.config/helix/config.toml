@@ -30,3 +30,5 @@ B = ":echo %sh{git show --no-patch --format='%%h (%%an: %%ar): %%s' $(git blame 
 o = ":sh gh browse -c %{buffer_name}:%{cursor_line}"
 # Easier shortcut to reflow or wrap text
 l = ":reflow"
+# Toggle relative and absolute numbers
+n = ":toggle line-number absolute relative"
