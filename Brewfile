@@ -25,7 +25,6 @@ brew "node"
 brew "ocrmypdf"
 brew "ollama"
 brew "prettier"
-brew "redis", restart_service: true
 brew "ripgrep"
 brew "shellcheck"
 brew "spotify_player"
