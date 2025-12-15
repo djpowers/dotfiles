@@ -2,6 +2,8 @@ if status is-interactive
     # ensure homebrew is in path
     fish_add_path /opt/homebrew/bin
     fish_add_path /opt/homebrew/sbin
+    # add Postgres.app’s bin folder to path
+    fish_add_path /Applications/Postgres.app/Contents/Versions/latest/bin/
 
     # use the default theme
     fish_config theme choose "fish default"
