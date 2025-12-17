@@ -25,6 +25,9 @@ if status is-interactive
     # set default source for fzf; respect gitignore
     set -gx FZF_DEFAULT_COMMAND 'fd --type f --strip-cwd-prefix --hidden --follow --exclude .git'
 
+    # enable IEx shell history
+    set -gx ERL_AFLAGS "-kernel shell_history enabled"
+
     # loop through installed Ollama models and pull latest
     function update_ollama_models
         ollama list | awk 'NR>1 {print $1}' | xargs -I {} sh -c 'echo "Updating model: {}"; ollama pull {}; echo "--"' && echo "All models updated."
