@@ -1,8 +1,6 @@
 [user]
   name = Dave Powers
-  email = djpowers89@gmail.com
-[includeIf "gitdir:~/work/"]
-  path = ~/.gitconfig-work
+  email = 4978418+djpowers@users.noreply.github.com
 [core]
   excludesfile = ~/.gitignore_global
   hooksPath = ~/.githooks/

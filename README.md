@@ -23,16 +23,6 @@ stow --verbose */
 ```
 ### 💼 Work (optional)
 
-Configure git config to use different name/email.
-
-Edit this configuration in `~/.gitconfig-work`:
-```shell
-[user]
-  name = WORK_NAME
-  email = WORK_EMAIL
-```
-Ensure relevant repositories are stored under `~/work/`.
-
 Enable git hooks to enforce conventional commits:
 ```shell
 cp ~/.githooks/commit-msg.sample ~/.githooks/commit-msg
