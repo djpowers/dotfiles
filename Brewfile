@@ -1,4 +1,5 @@
 tap "github/gh"
+brew "1password-cli"
 brew "aider"
 brew "bash-language-server"
 brew "bat"
