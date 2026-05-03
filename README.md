@@ -80,33 +80,6 @@ ollama pull llama2
 ollama pull codellama
 ```
 
-#### 💬 Configure [AIChat](https://github.com/sigoden/aichat#config)
-
-```shell
-aichat # will guide through configuration on first launch
-aichat --info | grep config_file # find existing config
-```
-
-```yaml
-model: ollama:codellama:latest
-clients:
-- type: openai-compatible
-  name: ollama
-  api_base: http://localhost:11434/v1
-  models:
-  - name: codellama:latest
-```
-
-### 🍐 Configure [Aider](https://aider.chat/)
-
-```shell
-aider # enter OpenRouter API key; will store in ~/.aider/oauth-keys.env
-aider --list-models free # list models containing "free"
-
-# TODO: remove this line once no longer necessary (Aider-AI/aider#216)
-cp aider/.config/config.yaml ~/.aider.conf.yml
-```
-
 ## Previous Versions
 
 - Latest Neovim-based commit: [`88371ba8ed`](https://github.com/djpowers/dotfiles/tree/88371ba8ed6f9671d5dc1a8d243032b0a41916c3)

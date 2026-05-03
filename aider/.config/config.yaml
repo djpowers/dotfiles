@@ -1,5 +1,0 @@
-#############
-# Main model:
-
-## Specify the model to use for the main chat
-model: openrouter/mistralai/mistral-7b-instruct:free
