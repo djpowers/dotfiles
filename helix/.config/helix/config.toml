@@ -1,6 +1,7 @@
 [editor]
 line-number = "relative"
 mouse = false
+"continue-comments" = false
 
 [editor.cursor-shape]
 insert = "bar"
